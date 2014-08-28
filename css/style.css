@@ -1,0 +1,50 @@
+.header{
+    padding-top: 20px;
+    height: 50px;
+    margin: 0px;
+    background-color: #333333;
+}
+
+.mypage{
+    display: inline;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.shop_name{
+    display: inline;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+}
+
+.logout{
+    display: inline;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.touroku{
+    display: inline;
+    padding-top: 10px;
+    padding-left: 900px;
+}
+
+.kaikei{
+    display: inline;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.category{
+    padding-top: 10px;
+    padding-left: 30px;
+    
+}
+
+.containts{
+    height:300px;
+    width:300px;
+    border:1px solid black;
+}
+
