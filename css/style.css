@@ -1,179 +1,832 @@
-.header{
-    padding-top: 20px;
-    height: 50px;
-    width:auto;
-    margin: 0px;
-    background-color: #333333;
-}
-
-.mypage{
-    display: inline;
-    padding-left: 5%;
-}
-
-.shop_name{
-    display: inline;
-    padding-left: 2%;
-    color: white;
-}
-
-.logout{
-    display: inline;
-    padding-left: 2%;
-}
-
-.touroku{
-    display: inline;
-    padding-left: 50%;
-}
-
-.kaikei{
-    display: inline;
-    padding-left: 2%;
-}
-/*
-=============================================
-ここまでヘッダーｃｓｓ
-=============================================
-*/
-
-
-
-.left_category{
-    padding-left: 30px;
+/*====================================
+共通のスタイル
+======================================*/
+    body{
+        font-size: 0.9em;
+    }
+    .header{
+        text-align: center;
+        padding-top: 20px;
+        height: 50px;
+        width:auto;
+        margin: 0px;
+        background-color: #333333;
+    }
     
+    .mypage{
+        display: inline;
+    }
+
+    .shop_name{
+        display: inline;
+        margin-left: 2%;
+        color: white;
+    }
+
+    .logout{
+        display: inline;
+        margin-left: 2%;
+    }
+
+    .touroku{
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .kaikei{
+        display: inline;
+        margin-left: 3%;
+    }
+    /*
+    =============================================
+    ここまでヘッダーｃｓｓ
+    =============================================
+    */
+    .all_container{
+        
+    }
+
+
+    .left_category{
+        margin-left: 5%;
+
+    }
+
+    .left_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_item_name{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_yen{
+        display: inline;
+        margin-left: 30%;
+    }
+
+    .left_containts{
+        height:300px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+    .left_container{
+        height:auto;
+        width:300px;
+        margin: 0 auto;
+    }
+    .item{
+        height: 20px;
+        width: 280px;
+    }
+    /*
+    ここまで左側コンテンツ
+    */
+
+
+    .right_container{
+        height:auto;
+        width:300px;
+        margin: 0 auto;
+    }
+
+
+
+
+    .right_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .right_item_name{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_yen{
+        display: inline;
+        padding-left: 20%;
+    }
+
+    .right_number{
+        display: inline;
+        padding-left: 10%;
+    }
+
+    .right_total_yen{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_containts{
+        height:250px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+
+    .option{
+        margin-top: 20px;
+    }
+
+    .reset{
+        display: inline;
+    }
+
+    .check_reset{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .pay_down{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .ticket{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .ticket_sentaku{
+        display: inline;
+    }
+
+
+    .ticket_touroku{
+        display: inline;
+        padding-left: 10px;
+    }
+
+    .total, .take_pay{
+        margin-top: 20px;
+        font-size: 150%;
+        width:600px;
+    }
+
+    .total_item{
+        display: inline;
+    }
+
+    .total_yen{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .take_pay2{
+        display: inline;
+    }
+
+    .take_pay3{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    /*ここまで会計ページCSS*/
+    .login_container{
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .idou{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .login_settei{
+        width: 300px;
+        margin-top: 10%;
+        display: inline;
+    }
+    .login_function2{
+        border:1px solid black;
+        width:300px;
+        margin: 0 auto;
+    }
+
+@charaset "utf-8";
+/*==================================
+ 一部タブレット縦向け、スマートフォン横向けのスタイル
+====================================*/
+@media only screen and (min-width:568px){
+    body{
+        font-size: 0.9em;
+    }
+    .header{
+        padding-top: 20px;
+        height: 50px;
+        width:auto;
+        margin: 0px;
+        background-color: #333333;
+    }
+    
+
+    .mypage{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .shop_name{
+        display: inline;
+        margin-left: 5%;
+        color: white;
+    }
+
+    .logout{
+        display: inline;
+        margin-left: 3%;
+    }
+
+    .touroku{
+        display: inline;
+        margin-left: 20%;
+    }
+
+    .kaikei{
+        display: inline;
+        margin-left: 2%;
+    }
+    /*
+    =============================================
+    ここまでヘッダーｃｓｓ
+    =============================================
+    */
+
+
+    .all_container{
+        margin:0 auto;
+    }
+    
+    .left_category{
+        margin-left: 5%;
+
+    }
+
+    .left_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_item_name{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_yen{
+        display: inline;
+        margin-left: 30%;
+    }
+
+    .left_containts{
+        height:300px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+    .left_container{
+        height:auto;
+        width:300px;
+        margin:0 auto;
+    }
+    .item{
+        height: 20px;
+        width: 280px;
+    }
+    /*
+    ここまで左側コンテンツ
+    */
+
+
+    .right_container{
+        height:auto;
+        width:300px;
+        margin:0 auto;
+    }
+
+
+
+
+    .right_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .right_item_name{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_yen{
+        display: inline;
+        padding-left: 20%;
+    }
+
+    .right_number{
+        display: inline;
+        padding-left: 10%;
+    }
+
+    .right_total_yen{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_containts{
+        height:250px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+
+    .option{
+        margin-top: 20px;
+    }
+
+    .reset{
+        display: inline;
+    }
+
+    .check_reset{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .pay_down{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .ticket{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .ticket_sentaku{
+        display: inline;
+    }
+
+
+    .ticket_touroku{
+        display: inline;
+        padding-left: 10px;
+    }
+
+    .total, .take_pay{
+        margin-top: 20px;
+        font-size: 150%;
+        width:600px;
+    }
+
+    .total_item{
+        display: inline;
+    }
+
+    .total_yen{
+        display: inline;
+        padding-left: 30px;
+    }
+
+    .take_pay2{
+        display: inline;
+    }
+
+    .take_pay3{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    /*ここまで会計ページCSS*/
+     .login_1,.login_2,.login_3{
+        display: inline;
+     }
+    .login_container{
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .idou{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .login_settei{
+        width: 300px;
+        margin-top: 10%;
+        display: inline;
+    }
+    .login_function2{
+        border:1px solid black;
+        width:300px;
+        margin:0 auto;
+    }
 }
 
-.left_id{
-    display: inline;
-    padding-left: 30px;
-}
-
-.left_item_name{
-    display: inline;
-    padding-left: 20px;
-}
-
-.left_yen{
-    display: inline;
-    padding-left: 250px;
-}
-
-.left_containts{
-    height:400px;
-    width:500px;
-    border:1px solid black;
-    overflow: scroll;
-    text-align: center;
-}
-.left_container{
-    height:auto;
-    width:500px;
-    margin-left: 30px;
-    float:left;
-}
 /*
-ここまで左側コンテンツ
+=====================================
+小さ目タブレット横向けのスタイル
+=====================================
 */
+@media only screen and (min-width:800px){
+body{
+        font-size: 0.9em;
+    }
+    .header{
+        padding-top: 20px;
+        height: 50px;
+        width:auto;
+        margin: 0px;
+        background-color: #333333;
+    }
+    
+
+    .mypage{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .shop_name{
+        display: inline;
+        margin-left: 5%;
+        color: white;
+    }
+
+    .logout{
+        display: inline;
+        margin-left: 3%;
+    }
+
+    .touroku{
+        display: inline;
+        margin-left: 20%;
+    }
+
+    .kaikei{
+        display: inline;
+        margin-left: 2%;
+    }
+    /*
+    =============================================
+    ここまでヘッダーｃｓｓ
+    =============================================
+    */
 
 
-.right_container{
-    height:auto;
-    width:600px;
-    margin-right: 200px;
-    margin-top: 55px;
-    float:right;
+
+    .left_category{
+        margin-left: 5%;
+
+    }
+
+    .left_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_item_name{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_yen{
+        display: inline;
+        margin-left: 30%;
+    }
+
+    .left_containts{
+        height:300px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+    .left_container{
+        height:auto;
+        width:300px;
+        margin-left: 20px;
+        float:left;
+    }
+    .item{
+        height: 20px;
+        width: 280px;
+    }
+    /*
+    ここまで左側コンテンツ
+    */
+
+
+    .right_container{
+        height:auto;
+        width:300px;
+        margin-right:20px;
+        margin-top: 50px;
+        float:right;
+    }
+
+
+
+
+    .right_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .right_item_name{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_yen{
+        display: inline;
+        padding-left: 20%;
+    }
+
+    .right_number{
+        display: inline;
+        padding-left: 10%;
+    }
+
+    .right_total_yen{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    .right_containts{
+        height:250px;
+        width:300px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+
+    .option{
+        margin-top: 20px;
+    }
+
+    .reset{
+        display: inline;
+    }
+
+    .check_reset{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .pay_down{
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .ticket{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .ticket_sentaku{
+        display: inline;
+    }
+
+
+    .ticket_touroku{
+        display: inline;
+        padding-left: 10px;
+    }
+
+    .total, .take_pay{
+        margin-top: 20px;
+        font-size: 150%;
+        width:600px;
+    }
+
+    .total_item{
+        display: inline;
+    }
+
+    
+
+    .take_pay2{
+        display: inline;
+    }
+
+    .take_pay3{
+        display: inline;
+        padding-left: 5%;
+    }
+
+    /*ここまで会計ページCSS*/
+     .login_1,.login_2,.login_3{
+        display: inline;
+     }
+    .login_container{
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .idou{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .login_settei{
+        width: 300px;
+        margin-top: 10%;
+        display: inline;
+    }
+    .login_function2{
+        border:1px solid black;
+        width:300px;
+        margin:0 auto;
+    }
 }
+/*===========================================
+ 大きめタブレット以上のレイアウト
+============================================*/
+@media only screen and (min-width:1024px){
+body{
+        font-size: 0.9em;
+    }
+    .header{
+        padding-top: 20px;
+        height: 50px;
+        width:auto;
+        margin: 0px;
+        background-color: #333333;
+    }
+    
+
+    .mypage{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .shop_name{
+        display: inline;
+        margin-left: 5%;
+        color: white;
+    }
+
+    .logout{
+        display: inline;
+        margin-left: 3%;
+    }
+
+    .touroku{
+        display: inline;
+        margin-left: 20%;
+    }
+
+    .kaikei{
+        display: inline;
+        margin-left: 2%;
+    }
+    /*
+    =============================================
+    ここまでヘッダーｃｓｓ
+    =============================================
+    */
+
+
+
+    .left_category{
+        margin-left: 5%;
+
+    }
+
+    .left_id{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_item_name{
+        display: inline;
+        margin-left: 5%;
+    }
+
+    .left_yen{
+        display: inline;
+        margin-left: 30%;
+    }
+
+    .left_containts{
+        height:300px;
+        width:400px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
+    .left_container{
+        height:auto;
+        width:400px;
+        margin-left: 40px;
+        float:left;
+    }
+    .item{
+        height: 20px;
+        width: 280px;
+    }
+    /*
+    ここまで左側コンテンツ
+    */
+
+
+    .right_container{
+        height:auto;
+        width:400px;
+        margin-right:40px;
+        margin-top: 50px;
+        float:right;
+    }
 
 
 
 
-.right_id{
-    display: inline;
-    padding-left: 30px;
-}
+    .right_id{
+        display: inline;
+        margin-left: 5%;
+    }
 
-.right_item_name{
-    display: inline;
-    padding-left: 20px;
-}
+    .right_item_name{
+        display: inline;
+        padding-left: 5%;
+    }
 
-.right_yen{
-    display: inline;
-    padding-left: 150px;
-}
+    .right_yen{
+        display: inline;
+        padding-left: 20%;
+    }
 
-.right_number{
-    display: inline;
-    padding-left: 50px;
-}
+    .right_number{
+        display: inline;
+        padding-left: 10%;
+    }
 
-.right_total_yen{
-    display: inline;
-    padding-left: 30px;
-}
+    .right_total_yen{
+        display: inline;
+        padding-left: 5%;
+    }
 
-.right_containts{
-    height:250px;
-    width:600px;
-    border:1px solid black;
-    overflow: scroll;
-    text-align: center;
-}
+    .right_containts{
+        height:250px;
+        width:400px;
+        border:1px solid black;
+        overflow: scroll;
+        text-align: center;
+    }
 
-.option{
-    margin-top: 20px;
-}
+    .option{
+        margin-top: 20px;
+    }
 
-.reset{
-    display: inline;
-}
+    .reset{
+        display: inline;
+    }
 
-.check_reset{
-    display: inline;
-    padding-left: 20px;
-}
+    .check_reset{
+        display: inline;
+        padding-left: 20px;
+    }
 
-.pay_down{
-    display: inline;
-    padding-left: 20px;
-}
+    .pay_down{
+        display: inline;
+        padding-left: 20px;
+    }
 
-.ticket{
-    margin-top: 20px;
-    margin-left: 100px;
-}
+    .ticket{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
 
-.ticket_sentaku{
-    display: inline;
-}
+    .ticket_sentaku{
+        display: inline;
+    }
 
 
-.ticket_touroku{
-    display: inline;
-    padding-left: 10px;
-}
+    .ticket_touroku{
+        display: inline;
+        padding-left: 10px;
+    }
 
-.total, .take_pay{
-    margin-top: 20px;
-    font-size: 150%;
-    width:600px;
-}
+    .total, .take_pay{
+        margin-top: 20px;
+        font-size: 150%;
+        width:600px;
+    }
 
-.total_item{
-    display: inline;
-}
+    .total_item{
+        display: inline;
+    }
 
-.total_yen{
-    display: inline;
-    padding-left: 60%;
-}
+    
 
-.take_pay2{
-    display: inline;
-}
+    .take_pay2{
+        display: inline;
+    }
 
-.take_pay3{
-    display: inline;
-    padding-left: 5%;
-}
+    .take_pay3{
+        display: inline;
+        padding-left: 5%;
+    }
+｝
