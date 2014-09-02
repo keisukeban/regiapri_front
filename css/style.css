@@ -37,6 +37,63 @@
         display: inline;
         margin-left: 3%;
     }
+
+    /*
+    ============================
+
+       //////
+       //   //               //        //
+       //  //             //////// /////////               //
+       /////    //   //      //        //      ////////    ////////   ///////  ///////  //////
+       //  //   //   //      //        //     //      //   //    //  //        //       //
+       //   //  //   //      //        //     //      //   //    //  //          /////   /////
+       //////    //////      //        //      ////////    //    //   ///////  //////  //////
+
+
+    ============================
+    */
+
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 10px 20px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    button.regi {
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3);
+        background: -moz-linear-gradient(top, #5c96fa 0%, #149cdb);
+        background: -webkit-gradient(linear, left top, left bottom, from(#5c96fa), to(#149cdb));
+        border: 1px solid #ffffff;
+    }
+
+    button.man {
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3);
+        background: -moz-linear-gradient(top, #19afff 0%, #0e9ec2);
+        background: -webkit-gradient(linear, left top, left bottom, from(#19afff), to(#0e9ec2));
+        border: 1px solid #ffffff;
+    }
+
+    button.lady {
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3);
+        background: -moz-linear-gradient(top, #fa1e31 0%, #f71b1b);
+        background: -webkit-gradient(linear, left top, left bottom, from(#fa1e31), to(#f71b1b));
+        border: 1px solid #f71125;
+    }
+
+
     /*
     =============================================
     ここまでヘッダーｃｓｓ
