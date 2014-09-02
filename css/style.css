@@ -53,7 +53,7 @@
     ============================
     */
 
-    button {
+    button, input[type="button"] {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         color: #ffffff;
@@ -62,8 +62,7 @@
         -webkit-border-radius: 0px;
         border-radius: 0px;
     }
-
-    button.regi {
+    button.regi, input[type="button"].regi {
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
@@ -72,8 +71,7 @@
         background: -webkit-gradient(linear, left top, left bottom, from(#5c96fa), to(#149cdb));
         border: 1px solid #ffffff;
     }
-
-    button.man {
+    button.man, input[type="button"].man {
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
@@ -82,8 +80,7 @@
         background: -webkit-gradient(linear, left top, left bottom, from(#19afff), to(#0e9ec2));
         border: 1px solid #ffffff;
     }
-
-    button.lady {
+    button.lady, input[type="button"].lady {
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
@@ -94,11 +91,11 @@
     }
 
 
-    /*
-    =============================================
-    ここまでヘッダーｃｓｓ
-    =============================================
-    */
+/*
+=============================================
+ここまでヘッダーｃｓｓ
+=============================================
+*/
     .all_container{
         
     }
