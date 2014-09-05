@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<script src="js_lib/jquery-1.11.1.min.js"></script>
+	<script src="js_lib/underscore-min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<title>会計</title>
+</head>
+<body>
+    <header class = "header">
+            <p class = "mypage"><input type = "button" class="regi" value = "マイページ" onClick = "window.open('***')"></p>
+            <p class = "shop_name">ID(名前？)</p>
+            <p class = "logout">
+                <input type = "button" class="regi" value = "ログアウト" onclick ="***">
+            </p>
+
+            <p class = "touroku">
+                <input type = "button" class="regi" value = "登録" onclick ="***">
+            </p>
+            <p class = "kaikei">
+                <input type = "button" class="regi" value = "会計" onclick ="***">
+            </p>
+    </header>
+
+    <div class="all_container">
+
+    <div class = "left_container">
+        <div class = "left_category">
+			<p>
+				カテゴリ:
+				<!-- カテゴリ一覧 -->
+				<select id="categorys">
+					<option value="all" selected>すべて</option>
+					<script id="categorys_tmp" type="text/template">
+						<option value=<%=id%>><%=category_name%></option>
+					</script>
+				</select>
+			</p>
+		</div><!-- /left_categorys -->
+
+        <p class="left_id">ID</p>
+        <p class="left_item_name">商品名</p>
+        <p class="left_yen">単価</p>
+
+		<!-- 商品一覧 -->
+		<div class="left_containts" id="items" style="background-color:lightgray">
+			<script id="items_tmp" type="text/template" style="padding: 10px 20px;">
+				<p class="<%=category_id%> item">
+				<input type="button" class="regi" id=<%=id%> value="<%=id%>: <%=item_name%> ¥<%=item_price%>">
+				</p>
+			</script>
+		</div>
+
+		<div id="profits">
+			<!-- <script id="profits_tmp" type="text/template"> -->
+				<ul class = "sell">
+				<li class = "today_sell">本日の売り上げ：</li>
+				<li class = "total_sell">総売り上げ：</li>
+				<li class = "profit">採算：</li>
+				</ul>
+			<!-- </script> -->
+		</div>
+
+    </div><!-- left_container -->
+
+	<div class = "right_container">
+		<p class="right_id">ID</p>
+		<p class="right_item_name">商品名</p>
+		<p class="right_yen">単価</p>
+		<p class="right_number">個数</p>
+		<p class="right_total_yen">価格</p>
+
+
+		<!-- 選択された商品 -->
+		<div class="right_containts" id="selected_items">
+			<script id="selected_items_tmp" type="text/template">
+				<p id="item<%=id%>">
+					<input type="checkbox"><%=id%>:<%=item_name%>
+					単価¥<span class="price"><%=item_price%></span>
+					<input type="button" class="minus" value="▼">
+					<input type="text" class="qty" value=1>個
+					<input type="button" class="plus" value="▲">
+					価格¥<span class="sum_price"><%=item_price%></span>
+					<input type="text" class="negiri_price" value=<%=item_price%>>
+				</p>
+			</script>
+			<script id="selected_tickets_tmp" type="text/template">
+				<p id="ticket<%=id%>">
+					<input type="checkbox">券:<%=ticket_name%>
+					単価¥<span class="price"><%=ticket_price%></span>
+					<input type="button" class="minus" value="▼">
+					<input type="text" class="qty" value=1>個
+					<input type="button" class="plus" value="▲">
+					価格¥<span class="sum_price"><%=ticket_price%></span>
+				</p>
+			</script>
+		</div><!-- /right_containts -->
+
+	<div class="option">
+	<input type="button" class="regi reset_btn" id="reset" value="リセット">
+	<input type="button" class="regi check_reset_btn" id="check_reset" value="チェックを消去">
+	<input type="button" class="regi pay_down" id="pay_down" value="値切り">
+	</div><!-- /option -->
+	
+	<!-- 金券一覧 -->
+	<div class="ticket">
+		<p class="ticket_sentaku">
+			<select id="tickets">
+				<option value="" selected>金券を選択</option>
+				<script id="tickets_tmp" type="text/template">
+					<option value=<%=id%>><%=ticket_name%></option>
+				</script>
+			</select>
+			<input type="button" class="regi" id="ticket_add" value="追加">
+		</p>
+	</div>
+
+	<div class="total">
+		<p class="total_item">計:<span id="total_qty">0</span>点</p>
+		<p class="total_yen">¥<span id="total_price">0</span></p>
+	</div><!-- /total -->
+	<div class="take_pay">
+		<p class="take_pay2">お預かり<input type="text" id="payment"></p>
+		<p>お釣り¥<span id="change"></span></p>
+		<p>確定</p>
+		<p>
+		<input type="button" class="man kakutei" value="幼">
+		<input type="button" class="man kakutei" value="成">
+		<input type="button" class="man kakutei" value="熟">
+		<input type="button" class="lady kakutei" value="幼">
+		<input type="button" class="lady kakutei" value="成">
+		<input type="button" class="lady kakutei" value="熟">
+	</div>
+
+</body>
+</html>
