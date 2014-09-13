@@ -8,44 +8,25 @@
     
 </head>
 <body>
-  <header class = "header">
-        <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-        <p class = "shop_name">ID(名前？)</p>
-        <p class = "logout">
-            <input type = "button" class="man" value = "ログアウト" onclick ="***">
-        </p>
-        <p class = "touroku">
-            <input type = "button" value = "登録" onclick ="***">
-        </p>
-        <p class = "kaikei">
-            <input type = "button" value = "会計" onclick ="***">
-        </p>
+    <header class = "header" style="text-align:centar; color:white;" >
+        ログイン
     </header>
-    <div class = "login_container">
-        <div class = "idou">
-            <p class = "login_1">
-                <input type = "button" value = "売上詳細へ" onclick ="***">
-            </p>
-            <p class = "login_2">
-                <input type = "button" value = "登録画面へ" onclick ="***">
-            </p>
-            <p class = "login_3">
-                <input type = "button" value = "会計画面へ" onclick ="***">
-            </p>
-        </div>
-        <div class="login_settei">
-            <p class="login_function1">
-                設定
-            </p>
-            <div class="login_function2">
-               <p class="ticket_use">
-                <input type="checkbox" name="function" value="ticket">金券を使用する
-                </p>
-                <p class="sonweki">
-                <input type="checkbox" name="function" value="sonweki">損益を表示する
-                </p>
-            </div>
-        </div>
-    </div>   
+    <div class="login_container">
+        <p>ユーザーID</p>
+        <p>
+            <form action="***" method="post" class="take_id">
+                <input type="text" name="take_id">
+            </form>
+        </p>
+        <p>パスワード</p>
+        <p>
+            <form action="***" method="post" class="take_pass">
+                <input type="text" name="take_pass">
+            </form>
+        </p>
+        <p>
+            <input type="button" value = "ログイン" class = "regi" onclick ="***">
+        </p>
+    </div>
 </body>
 </html>

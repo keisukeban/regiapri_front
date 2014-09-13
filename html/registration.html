@@ -3,36 +3,148 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width ">
-	<title>ログイン画面</title>
+	<title>登録画面</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     
 </head>
 <body>
-  <header class = "header">
-        <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-        <p class = "shop_name">ID(名前？)</p>
-        <p class = "logout">
-            <input type = "button" value = "ログアウト" onclick ="***">
-        </p>
-        <p class = "touroku">
-            <input type = "button" value = "登録" onclick ="***">
-        </p>
-        <p class = "kaikei">
-            <input type = "button" value = "会計" onclick ="***">
-        </p>
+    <header class = "header">
+            <p class = "mypage">
+                <input type = "button" value = "マイページ" class = "regi" onclick="location.href='mypage.html'">>
+            </p>
+            <p class = "shop_name">ID</p>
+            <p class = "logout">
+                <input type = "button" value = "ログアウト" class = "regi" onclick ="***">
+            </p>
+
+            <p class = "touroku">
+                <input type = "button" value = "登録" class = "regi" onclick ="location.href='registration.html'">
+            </p>
+            <p class = "kaikei">
+                <input type = "button" value = "会計" class = "regi"  onclick ="location.href='payment.html'">
+            </p>
     </header>
     
-    <container>
-       <div >
-        <p class = "item_touroku">
-            商品登録
-        </p>
-        <hr>
-       <table>
-           <tr><td></td><td>商品名</td><td>販売価格</td><td>カテゴリ</td><td colspan="2">在庫（0を入力で無限）</td></tr>
-           <tr><td>1:</td><td><input type="text" name="item_name1"></td><td>￥<input type="text" name="price1"></td></tr>
-       </table> 
+    <div class = "touroku_container">
+        <table>
+           <tr><td>商品登録</td><td class="line"><hr size = "5"></td></tr>
+        </table>
+        <div class = "touroku_head">
+            <p class="item_number">商品数：
+                <select name="item_number">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+            </p>
+            <p class="new_category">新規カテゴリ：</p>
+            <p class="new_category2">
+                 <form action="***" method="post" class="new_category3">
+                    <input type="text" name="new_category" class="new_category4">
+                </form>
+                 <input type = "button" value = "登録" class = "category_touroku"  onclick ="***">
+            </p>
+           
+        </div>
+        <table class="touroku_table">
+           <tr>
+               <td></td>
+               <td>商品名</td>
+               <td>販売価格</td>
+               <td>カテゴリ</td>
+               <td colspan="2">在庫（0を入力で無限）
+               </td>
+            </tr>
+           <tr>
+               <td>1:</td>
+               <td><input type="text" name="item_name1"></td>
+               <td>￥<input type="text" name="price1"></td>
+               <td><select name = "category"><option value="test">test</option><option value="test2">test2</option></select></td>
+               <td><input type="text" name="stock"></td>
+               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
+            </tr>
+            <tr>
+               <td>2:</td>
+               <td><input type="text" name="item_name2"></td>
+               <td>￥<input type="text" name="price2"></td>
+               <td><select name = "category"><option value="test">test</option><option value="test3">test3</option></select></td>
+               <td><input type="text" name="stock"></td>
+               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
+            </tr>
+        </table> 
+        <div class = "which">
+            <p class="cancel">
+                <input type="button" value="キャンセル" class = "regi" onclick="***">
+            </p>
+            <p class="ok">
+               <input type="button" value="確定" class = "regi" onclick="***">
+                
+            </p>
+        </div>
+    </div>
+    <div class="touroku_container">
+        <table>
+           <tr><td>金券登録</td><td class="line"><hr size = "5"></td></tr>
+        </table>
+        <div class = "touroku_head">
+            <p class="item_number">金券枚数：</p>
+            <p class="item_number2">
+                <select name="item_number">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+            </p>
+        </div>
+        <table class="touroku_table">
+            <tr>
+               <td></td>
+               <td>金券名</td>
+               <td>金券の値段</td>
+            </tr>
+            <tr>
+               <td>1:</td>
+               <td><input type="text" name="item_name1"></td>
+               <td>￥<input type="text" name="price1"></td>
+               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
+            </tr>
+            <tr>
+               <td>2:</td>
+               <td><input type="text" name="item_name2"></td>
+               <td>￥<input type="text" name="price2"></td>
+               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
+            </tr>
+        </table>
+        <div class = "which">
+            <p class="cancel">
+                <input type="button" value="キャンセル" class = "regi" onclick="***">
+            </p>
+            <p class="ok">
+               <input type="button" value="確定" class = "regi" onclick="***">
+                
+            </p>
+        </div>
+    </div>
+    <div class="touroku_container">
+        <table>
+           <tr><td>出費登録</td><td class="line"><hr size = "5"></td></tr>
+        </table>
+        <table class="shuppi_table">
+            <tr>
+               <td>金券名</td>
+               <td>金券の値段</td>
+            </tr>
+            <tr>
+               <td><input type="text" name="item_name1"></td>
+               <td>￥<input type="text" name="price1"></td>
+               <td><input type="button" value="登録" class = "regi" onclick="***"></td>
+            </tr>
+        </table>
+    </div>
     
-    </container>
 </body>
 </html>

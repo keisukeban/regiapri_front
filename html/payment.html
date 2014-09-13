@@ -10,17 +10,19 @@
 
 <body>
     <header class = "header">
-            <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-            <p class = "shop_name">ID(名前？)</p>
+            <p class = "mypage">
+                <input type = "button" value = "マイページ" class = "regi" onclick="location.href='mypage.html'">>
+            </p>
+            <p class = "shop_name">ID</p>
             <p class = "logout">
-                <input type = "button" value = "ログアウト" onclick ="***">
+                <input type = "button" value = "ログアウト" class = "regi" onclick ="***">
             </p>
 
             <p class = "touroku">
-                <input type = "button" value = "登録" onclick ="***">
+                <input type = "button" value = "登録" class = "regi" onclick ="location.href='registration.html'">
             </p>
             <p class = "kaikei">
-                <input type = "button" value = "会計" onclick ="***">
+                <input type = "button" value = "会計" class = "regi"  onclick ="location.href='payment.html'">
             </p>
     </header>
     <div class="all_container">
@@ -40,7 +42,7 @@
 
             <div class = "left_containts">
                 <p class = "item">
-                    <input type="button" value = "***" onclick ="***">
+                    <input type="button" value = "***" class = "button_item" onclick ="***">
                 </p>
             </div>
             <ul class = "sell">
@@ -61,13 +63,13 @@
             </div>
             <div class = "option">
                 <p class = "reset">
-                    <input type = "button" value = "リセット" onclick ="***">
+                    <input type = "button" value = "リセット" class = "regi" onclick ="***">
                 </p>
                 <p class = "check_reset">
-                    <input type = "button" value = "チェックを解除" onclick ="***">
+                    <input type = "button" value = "チェックを解除" class = "regi" onclick ="***">
                 </p>
                 <p class = "pay_down">
-                    <input type = "button" value = "値切り" onclick ="***">
+                    <input type = "button" value = "値切り" class = "regi" onclick ="***">
                 </p>
             </div><!-- option -->
             <div class = "ticket">
@@ -80,7 +82,7 @@
                     </p>
                 </form>
                 <form action="***" method="post" class = "ticket_touroku">
-                        <input type = "button" value = "登録" onclick ="***">
+                        <input type = "button" value = "登録" class = "regi" onclick ="***">
                 </form>
             </div>
             <div class="total">
@@ -98,6 +100,25 @@
                 <form action="***" method="post" class="take_pay3">
                     <input type="text" name="take_pay">
                 </form>
+            </div>
+            <div class = "exchange">
+                <p class = "exchange2">
+                    お釣り
+                </p>
+                <form action="***" method="get" class="exchange3">
+                    <input type="text" name="exchange">
+                </form>
+            </div>
+            <div class = "decide">
+                <p class = "decide2">
+                   <b>確定</b>
+                </p>
+                <p class = "decide_men">
+                    <input type = "button" value = "幼" class ="men" onclick ="***"><input type = "button" value = "成" class ="men" onclick ="***"><input type = "button" value = "老" class ="men" onclick ="***">
+                </p>
+                <p class = "decide_women">
+                    <input type = "button" value = "幼" class ="women" onclick ="***"><input type = "button" value = "成" class ="women" onclick ="***"><input type = "button" value = "老" class ="women" onclick ="***">
+                </p>
             </div>
         </div>
     </div>

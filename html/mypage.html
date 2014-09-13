@@ -3,23 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width ">
-	<title>ログイン画面</title>
+	<title>マイページ</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     
 </head>
 <body>
-  <header class = "header">
-        <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-        <p class = "shop_name">ID(名前？)</p>
-        <p class = "logout">
-            <input type = "button" value = "ログアウト" onclick ="***">
-        </p>
-        <p class = "touroku">
-            <input type = "button" value = "登録" onclick ="***">
-        </p>
-        <p class = "kaikei">
-            <input type = "button" value = "会計" onclick ="***">
-        </p>
+    <header class = "header">
+            <p class = "mypage">
+                <input type = "button" value = "マイページ" class = "regi" onclick="location.href='mypage.html'">>
+            </p>
+            <p class = "shop_name">ID</p>
+            <p class = "logout">
+                <input type = "button" value = "ログアウト" class = "regi" onclick ="***">
+            </p>
+
+            <p class = "touroku">
+                <input type = "button" value = "登録" class = "regi" onclick ="location.href='registration.html'">
+            </p>
+            <p class = "kaikei">
+                <input type = "button" value = "会計" class = "regi"  onclick ="location.href='payment.html'">
+            </p>
     </header>
+    <div class = "login_container">
+        <div class = "idou">
+            <p class = "login_1">
+                <input type = "button" value = "売上詳細へ" class = "regi" onclick ="***">
+            </p>
+            <p class = "login_2">
+                <input type = "button" value = "登録画面へ" class = "regi" onclick ="***">
+            </p>
+            <p class = "login_3">
+                <input type = "button" value = "会計画面へ" class = "regi" onclick ="***">
+            </p>
+        </div>
+        <div class="login_settei">
+            <p class="login_function1">
+                設定
+            </p>
+            <div class="login_function2">
+               <p class="ticket_use">
+                <input type="checkbox" name="function" value="ticket">金券を使用する
+                </p>
+                <p class="sonweki">
+                <input type="checkbox" name="function" value="sonweki">損益を表示する
+                </p>
+                <p class="save">
+                     <input type = "button" value = "保存" class = "regi" color = "grey" onclick ="***">
+                </p>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>

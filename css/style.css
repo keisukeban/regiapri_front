@@ -7,7 +7,7 @@
     .header{
         text-align: center;
         padding-top: 20px;
-        height: 50px;
+        height: 100px;
         width:auto;
         margin: 0px;
         background-color: #333333;
@@ -30,7 +30,7 @@
 
     .touroku{
         display: inline;
-        margin-left: 20px;
+        margin-left: 2%;
     }
 
     .kaikei{
@@ -62,7 +62,7 @@
         -webkit-border-radius: 0px;
         border-radius: 0px;
     }
-    button.regi, input[type="button"].regi {
+    button.regi, input[type="button"].regi, button.button_item, input[type="button"].button_item, button.category_touroku, input[type="button"].category_touroku{
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
@@ -71,7 +71,7 @@
         background: -webkit-gradient(linear, left top, left bottom, from(#5c96fa), to(#149cdb));
         border: 1px solid #ffffff;
     }
-    button.man, input[type="button"].man {
+    button.men, input[type="button"].men {
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 51, 255, 0.7);
@@ -80,7 +80,7 @@
         background: -webkit-gradient(linear, left top, left bottom, from(#19afff), to(#0e9ec2));
         border: 1px solid #ffffff;
     }
-    button.lady, input[type="button"].lady {
+    button.women, input[type="button"].women {
         -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 0.7);
@@ -136,6 +136,9 @@
     .item{
         height: 20px;
         width: 280px;
+    }
+    .button_item{
+        width:270px;
     }
     /*
     ここまで左側コンテンツ
@@ -199,7 +202,7 @@
 
     .pay_down{
         display: inline;
-        padding-left: 20px;
+        margin-top: 10px;
     }
 
     .ticket{
@@ -217,7 +220,7 @@
         padding-left: 10px;
     }
 
-    .total, .take_pay{
+    .total, .take_pay, .exchange, .decide{
         margin-top: 20px;
         font-size: 150%;
         width:600px;
@@ -232,7 +235,7 @@
         padding-left: 20px;
     }
 
-    .take_pay2{
+    .take_pay2, .exchange2, .decide2{
         display: inline;
     }
 
@@ -240,6 +243,12 @@
         display: inline;
         padding-left: 5%;
     }
+
+    .exchange3{
+        display: inline;
+        padding-left: 9%;
+    }
+    
 
     /*ここまで会計ページCSS*/
     .login_container{
@@ -262,6 +271,44 @@
         margin: 0 auto;
     }
 
+/*================================================
+  商品登録ページ
+==================================================*/
+
+        
+
+    .touroku_container{
+        width:300px;
+        margin: 0 auto;
+        padding-top: 3%;
+    }
+    .line{
+        width:200px;
+        color:black;
+    }
+    table{
+        margin: 0 auto;
+    }
+    .touroku_head, .which{
+        text-align: center;
+    }
+     .new_category, .new_category2, .new_category3, .category_touroku, .category_touroku2, .cancel, .ok{
+        display: inline;
+    }
+    
+    .new_category4{
+        width: 50px;
+    }
+    .touroku_head{
+        padding-top: 3%;
+    }
+    .touroku_table, .which, .shuppi_table{
+        padding-top: 2%;
+    }
+
+   
+
+
 @charaset "utf-8";
 /*==================================
  一部タブレット縦向け、スマートフォン横向けのスタイル
@@ -281,7 +328,7 @@
 
     .mypage{
         display: inline;
-        margin-left: 5%;
+        margin-left: 1%;
     }
 
     .shop_name{
@@ -297,7 +344,7 @@
 
     .touroku{
         display: inline;
-        margin-left: 20%;
+        margin-left: 5%;
     }
 
     .kaikei{
@@ -413,7 +460,7 @@
 
     .pay_down{
         display: inline;
-        padding-left: 20px;
+        
     }
 
     .ticket{
@@ -478,7 +525,23 @@
         width:300px;
         margin:0 auto;
     }
+/*====================================
+登録画面
+======================================*/
+    .touroku_container{
+        width: 500px;
+    }
+    .line{
+        width:400px;
+    }
+     .new_category{
+        padding-left: 5%;
+    }
+    .new_category4{
+        width: auto;
+    }
 }
+    
 
 /*
 =====================================
@@ -529,7 +592,9 @@ body{
     =============================================
     */
 
-
+    .all_container{
+        width:675px;
+    }
 
     .left_category{
         margin-left: 5%;
@@ -632,7 +697,6 @@ body{
 
     .pay_down{
         display: inline;
-        padding-left: 20px;
     }
 
     .ticket{
@@ -694,7 +758,17 @@ body{
         width:300px;
         margin:0 auto;
     }
+/*===========================================
+登録画面
+============================================*/
+    .touroku_container{
+        width: 700px;
+    }
+    .line{
+        width:600px;
+    }
 }
+
 /*===========================================
  大きめタブレット以上のレイアウト
 ============================================*/
@@ -742,7 +816,10 @@ body{
     =============================================
     */
 
-
+    .all_container{
+        margin: 0 auto;
+        width: 900px;
+    }
 
     .left_category{
         margin-left: 5%;
@@ -780,6 +857,10 @@ body{
     .item{
         height: 20px;
         width: 280px;
+    }
+    .button_item{
+        width:370px;
+        margin: 0 auto;
     }
     /*
     ここまで左側コンテンツ
@@ -883,4 +964,33 @@ body{
         display: inline;
         padding-left: 5%;
     }
-｝
+    
+    .decide_men, .decide_women{
+        display: inline;
+        margin-left: 5%;
+    }
+/*=============================================
+登録画面
+==============================================*/
+    .touroku_container{
+        width: 1000px;
+    }
+    .line{
+        width:800px;
+    }
+    .item_number, .item_number2, .new_category, .new_category2, .new_category3, .category_touroku, .category_touroku2, .cancel, .ok{
+        display: inline;
+    }
+    .new_category{
+        padding-left: 5%;
+    }
+    .touroku_head{
+        padding-top: 3%;
+    }
+    .touroku_table, .which, .shuppi_table{
+        padding-top: 2%;
+    }
+
+}
+
+
