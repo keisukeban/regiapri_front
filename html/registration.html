@@ -3,23 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width ">
-	<title>ログイン画面</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    
+	<title>登録画面</title>
+   <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+   <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 <body>
-  <header class = "header">
-        <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-        <p class = "shop_name">ID(名前？)</p>
-        <p class = "logout">
-            <input type = "button" value = "ログアウト" onclick ="***">
-        </p>
-        <p class = "touroku">
-            <input type = "button" value = "登録" onclick ="***">
-        </p>
-        <p class = "kaikei">
-            <input type = "button" value = "会計" onclick ="***">
-        </p>
+  <header>
+        <ul>
+            <div class="toggle t_left"><input type = "button" value = "ID(名前？) ▼" class="btn" onClick = "#"></li></div>
+            <div class = "head_left">
+            <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "window.open('***')"></li>
+            <li class = "shop_name">ID(名前？)</li>
+            <li class = "logout">
+                <input type = "button" value = "ログアウト" class="btn" onclick ="***">
+            </li>
+            </div>
+            
+            <div class="toggle t_right"><input type = "button" value = "メニュー▼" class="btn" onClick = "#"></li></div>
+            <div class = "head_right"> 
+            <li class = "touroku">
+                <input type = "button" value = "登録" class="btn" onclick ="***">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "会計" class="btn" onclick ="***">
+            </li>
+            </div>
+        </ul>
     </header>
     
     <container>

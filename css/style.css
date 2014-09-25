@@ -1,42 +1,46 @@
 /*====================================
-共通のスタイル
+共通のスタイル　/兼PCサイズ
 ======================================*/
     body{
         font-size: 0.9em;
+        background: #fcfcfc;
     }
-    .header{
+
+
+    header{
         text-align: center;
-        padding-top: 20px;
-        height: 50px;
+        padding-top: 10px;
+        height: 40px;
         width:auto;
         margin: 0px;
-        background-color: #333333;
+        background-color: #494949;
     }
-    
-    .mypage{
+
+    header ul {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header ul li {
         display: inline;
     }
 
-    .shop_name{
-        display: inline;
-        margin-left: 2%;
-        color: white;
+    header ul .head_left {
+        float: left;
+    }
+    .mypage{margin-left: 30px;}
+    .shop_name{margin: 0 30px; color: #fff;}
+
+    header ul .head_right {
+        float: right;
+    }
+    .touroku{margin-right: 30px;}
+    .kaikei{margin-right: 30px;}
+
+    .toggle {
+        display: none;
     }
 
-    .logout{
-        display: inline;
-        margin-left: 2%;
-    }
-
-    .touroku{
-        display: inline;
-        margin-left: 20px;
-    }
-
-    .kaikei{
-        display: inline;
-        margin-left: 3%;
-    }
 
     /*
     ============================
@@ -53,7 +57,7 @@
     ============================
     */
 
-    button, input[type="button"] {
+    /*button, input[type="button"] {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         color: #ffffff;
@@ -88,6 +92,24 @@
         background: -moz-linear-gradient(top, #fa1e31 0%, #f71b1b);
         background: -webkit-gradient(linear, left top, left bottom, from(#fa1e31), to(#f71b1b));
         border: 1px solid #f71125;
+    }*/
+
+    .btn {
+        font-size: 14px;
+        color: #ffffff;
+        padding: 5px 20px;
+        background: -moz-linear-gradient(
+        top,
+        #79abf2 0%,
+        #6690cc);
+        background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#79abf2),
+        to(#6690cc));
+        border-top: solid 1px #9bc1f5;
+        border-left: solid 1px #86b0ea;
+        border-bottom: solid 1px #496691;
+        border-right: solid 1px #5f86be;
     }
 
 
@@ -97,12 +119,19 @@
 =============================================
 */
     .all_container{
-        
+        width: 1000px;
+        margin: 0 auto 0 auto;
     }
 
 
+    .left_container{
+        height:auto;
+        width:400px;
+        float:left;
+    }
+
     .left_category{
-        margin-left: 5%;
+        margin: 10px 0 5px 0;
 
     }
 
@@ -121,35 +150,37 @@
         margin-left: 30%;
     }
 
-    .left_containts{
-        height:300px;
-        width:300px;
+    .left_contents{
+        height:350px;
+        width:400px;
         border:1px solid black;
         overflow: scroll;
         text-align: center;
+        background: #fff;
     }
-    .left_container{
-        height:auto;
-        width:300px;
-        margin: 0 auto;
-    }
+
     .item{
         height: 20px;
         width: 280px;
+    }
+
+    .sell{
+        border: solid 2px #333;
+        width: 400px;
+        height: 180px;
+        margin: 20px 0;
     }
     /*
     ここまで左側コンテンツ
     */
 
 
-    .right_container{
+ .right_container{
         height:auto;
-        width:300px;
-        margin: 0 auto;
+        width:500px;
+        margin-top: 37px;
+        float:right;
     }
-
-
-
 
     .right_id{
         display: inline;
@@ -173,72 +204,64 @@
 
     .right_total_yen{
         display: inline;
-        padding-left: 5%;
+        padding-left: 10%;
     }
 
-    .right_containts{
+    .right_contents{
         height:250px;
-        width:300px;
+        width:500px;
+        float: right;
         border:1px solid black;
         overflow: scroll;
         text-align: center;
+        margin-bottom: 20px;
+        background: #fff;
     }
 
-    .option{
-        margin-top: 20px;
+    .option ul{
+        padding-top: 20px;
+        width: 500px;
+        margin: 0 auto;
     }
-
-    .reset{
+    .option ul li{
         display: inline;
-    }
-
-    .check_reset{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .pay_down{
-        display: inline;
-        padding-left: 20px;
+        margin: 0 25px;
     }
 
     .ticket{
-        margin-top: 20px;
-        margin-left: 100px;
+        margin: 20px 0 10px 0;
+        width: 500px;
     }
-
     .ticket_sentaku{
-        display: inline;
-    }
-
-
-    .ticket_touroku{
-        display: inline;
-        padding-left: 10px;
+        width: 300px;
+        margin: 0 30px 0 70px;
     }
 
     .total, .take_pay{
-        margin-top: 20px;
         font-size: 150%;
-        width:600px;
+        font-weight: bold;
+        width:500px;
+        margin-top: 10px;
     }
 
     .total_item{
-        display: inline;
+        float: left;
     }
-
     .total_yen{
-        display: inline;
-        padding-left: 20px;
+        float: right;
     }
 
-    .take_pay2{
-        display: inline;
+    .take_pay p{
+        clear: both;
+        width : 100px;
+        float: left;
     }
 
-    .take_pay3{
-        display: inline;
-        padding-left: 5%;
+    .pay_text{
+        width: 350px;
+        height: 33px;
+        font-size: 100%;
+        float: right;
     }
 
     /*ここまで会計ページCSS*/
@@ -247,293 +270,89 @@
         width: 100%;
         font-size: 0.9em;
     }
-    .idou{
+    .link{
         text-align: center;
-        margin-top: 10%;
+        margin: 50px 0;
+    }
+    .link ul li{
+        display: inline;
+        margin: 0 30px;
+    }
+    .link ul li input{
+        padding: 20px 30px;
     }
     .login_settei{
-        width: 300px;
-        margin-top: 10%;
-        display: inline;
+        width: 100%;
     }
     .login_function2{
         border:1px solid black;
         width:300px;
         margin: 0 auto;
+        padding: 20px;
     }
 
 @charaset "utf-8";
 /*==================================
  一部タブレット縦向け、スマートフォン横向けのスタイル
 ====================================*/
-@media only screen and (min-width:568px){
+@media only screen and (max-width:800px){
     body{
         font-size: 0.9em;
     }
-    .header{
-        padding-top: 20px;
-        height: 50px;
-        width:auto;
-        margin: 0px;
-        background-color: #333333;
-    }
-    
 
-    .mypage{
-        display: inline;
-        margin-left: 5%;
+    .head_right,.head_left{
+        display: none;
     }
-
-    .shop_name{
-        display: inline;
-        margin-left: 5%;
-        color: white;
+    .toggle{
+        display: block;
+        margin:0 30px;
+        position: re;
+    }
+    .t_left{
+        float: left;
+    }
+    .t_right{
+        float: right;
     }
 
-    .logout{
-        display: inline;
-        margin-left: 3%;
-    }
-
-    .touroku{
-        display: inline;
-        margin-left: 20%;
-    }
-
-    .kaikei{
-        display: inline;
-        margin-left: 2%;
-    }
     /*
     =============================================
     ここまでヘッダーｃｓｓ
     =============================================
     */
 
-
-    .all_container{
-        margin:0 auto;
-    }
-    
-    .left_category{
-        margin-left: 5%;
-
-    }
-
-    .left_id{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .left_item_name{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .left_yen{
-        display: inline;
-        margin-left: 30%;
-    }
-
-    .left_containts{
-        height:300px;
-        width:300px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
-    .left_container{
-        height:auto;
-        width:300px;
-        margin:0 auto;
-    }
-    .item{
-        height: 20px;
-        width: 280px;
-    }
-    /*
-    ここまで左側コンテンツ
-    */
-
-
-    .right_container{
-        height:auto;
-        width:300px;
-        margin:0 auto;
-    }
-
-
-
-
-    .right_id{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .right_item_name{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_yen{
-        display: inline;
-        padding-left: 20%;
-    }
-
-    .right_number{
-        display: inline;
-        padding-left: 10%;
-    }
-
-    .right_total_yen{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_containts{
-        height:250px;
-        width:300px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
-
-    .option{
-        margin-top: 20px;
-    }
-
-    .reset{
-        display: inline;
-    }
-
-    .check_reset{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .pay_down{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .ticket{
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
-    .ticket_sentaku{
-        display: inline;
-    }
-
-
-    .ticket_touroku{
-        display: inline;
-        padding-left: 10px;
-    }
-
-    .total, .take_pay{
-        margin-top: 20px;
-        font-size: 150%;
-        width:600px;
-    }
-
-    .total_item{
-        display: inline;
-    }
-
-    .total_yen{
-        display: inline;
-        padding-left: 30px;
-    }
-
-    .take_pay2{
-        display: inline;
-    }
-
-    .take_pay3{
-        display: inline;
-        padding-left: 5%;
-    }
-
     /*ここまで会計ページCSS*/
-     .login_1,.login_2,.login_3{
-        display: inline;
-     }
-    .login_container{
-        text-align: center;
-        width: 100%;
-        font-size: 0.9em;
+    .link ul li{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
     }
-    .idou{
-        text-align: center;
-        margin-top: 10%;
-    }
-    .login_settei{
-        width: 300px;
-        margin-top: 10%;
-        display: inline;
-    }
-    .login_function2{
-        border:1px solid black;
-        width:300px;
-        margin:0 auto;
+    .link ul li input{
+        width: 80%;
     }
 }
-
 /*
 =====================================
 小さ目タブレット横向けのスタイル
 =====================================
 */
-@media only screen and (min-width:800px){
+@media only screen and (max-width:1010px){
 body{
         font-size: 0.9em;
     }
-    .header{
-        padding-top: 20px;
-        height: 50px;
-        width:auto;
-        margin: 0px;
-        background-color: #333333;
-    }
-    
 
-    .mypage{
-        display: inline;
-        margin-left: 5%;
-    }
+    header ul {width: auto;}
 
-    .shop_name{
-        display: inline;
-        margin-left: 5%;
-        color: white;
-    }
-
-    .logout{
-        display: inline;
-        margin-left: 3%;
-    }
-
-    .touroku{
-        display: inline;
-        margin-left: 20%;
-    }
-
-    .kaikei{
-        display: inline;
-        margin-left: 2%;
-    }
     /*
     =============================================
     ここまでヘッダーｃｓｓ
     =============================================
     */
 
-
-
-    .left_category{
-        margin-left: 5%;
-
+    .all_container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
     }
 
     .left_id{
@@ -551,336 +370,93 @@ body{
         margin-left: 30%;
     }
 
-    .left_containts{
-        height:300px;
-        width:300px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
     .left_container{
         height:auto;
-        width:300px;
-        margin-left: 20px;
-        float:left;
+        width:100%;
+    }
+    .left_contents{
+        height:300px;
+        width:100%;
+        margin: 0 auto;
     }
     .item{
         height: 20px;
         width: 280px;
     }
+
+    .sell{
+        position: absolute;
+        top: 805px;
+        width: 45%;
+    }
     /*
     ここまで左側コンテンツ
     */
 
-
     .right_container{
         height:auto;
-        width:300px;
-        margin-right:20px;
-        margin-top: 50px;
-        float:right;
-    }
-
-
-
-
-    .right_id{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .right_item_name{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_yen{
-        display: inline;
-        padding-left: 20%;
-    }
-
-    .right_number{
-        display: inline;
-        padding-left: 10%;
-    }
-
-    .right_total_yen{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_containts{
-        height:250px;
-        width:300px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
-
-    .option{
+        width:100%;
         margin-top: 20px;
     }
 
-    .reset{
-        display: inline;
-    }
-
-    .check_reset{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .pay_down{
-        display: inline;
-        padding-left: 20px;
+    .right_contents{
+        height:300px;
+        width:100%;
+        margin: 0 auto 20px;
     }
 
     .ticket{
-        margin-top: 20px;
-        margin-left: 100px;
+        width: 50%;
+        float: left;
     }
-
     .ticket_sentaku{
-        display: inline;
+        width: 70%;
+        margin: 0 5%;
     }
 
 
-    .ticket_touroku{
-        display: inline;
-        padding-left: 10px;
+    .total{
+        width: 50%;
+        float: right;
+        margin-top: 15px;
     }
-
-    .total, .take_pay{
-        margin-top: 20px;
-        font-size: 150%;
-        width:600px;
-    }
-
     .total_item{
-        display: inline;
+        float: left;
+        width: 40%;
+    }
+    .total_yen{
+        float: right;
+        width: 50%;
+    }
+
+    .take_pay{
+        width: 50%;
+        float: right;
+        margin-bottom: 30px;
+        clear: both;
+    }
+    .take_pay form p{
+        width: 40%;
+        float: left;
+    }
+    .pay_text{
+        width: 50%;
+        float: right;
     }
 
     
-
-    .take_pay2{
-        display: inline;
-    }
-
-    .take_pay3{
-        display: inline;
-        padding-left: 5%;
-    }
-
     /*ここまで会計ページCSS*/
-     .login_1,.login_2,.login_3{
-        display: inline;
-     }
-    .login_container{
-        text-align: center;
-        width: 100%;
-        font-size: 0.9em;
-    }
-    .idou{
-        text-align: center;
-        margin-top: 10%;
-    }
-    .login_settei{
-        width: 300px;
-        margin-top: 10%;
-        display: inline;
-    }
-    .login_function2{
-        border:1px solid black;
-        width:300px;
-        margin:0 auto;
-    }
 }
 /*===========================================
  大きめタブレット以上のレイアウト
 ============================================*/
-@media only screen and (min-width:1024px){
-body{
-        font-size: 0.9em;
-    }
-    .header{
-        padding-top: 20px;
-        height: 50px;
-        width:auto;
-        margin: 0px;
-        background-color: #333333;
-    }
-    
-
-    .mypage{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .shop_name{
-        display: inline;
-        margin-left: 5%;
-        color: white;
-    }
-
-    .logout{
-        display: inline;
-        margin-left: 3%;
-    }
-
-    .touroku{
-        display: inline;
-        margin-left: 20%;
-    }
-
-    .kaikei{
-        display: inline;
-        margin-left: 2%;
-    }
+@media only screen and (min-width:1000px){
     /*
     =============================================
     ここまでヘッダーｃｓｓ
     =============================================
-    */
-
-
-
-    .left_category{
-        margin-left: 5%;
-
-    }
-
-    .left_id{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .left_item_name{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .left_yen{
-        display: inline;
-        margin-left: 30%;
-    }
-
-    .left_containts{
-        height:300px;
-        width:400px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
-    .left_container{
-        height:auto;
-        width:400px;
-        margin-left: 40px;
-        float:left;
-    }
-    .item{
-        height: 20px;
-        width: 280px;
-    }
+    */    
     /*
     ここまで左側コンテンツ
     */
-
-
-    .right_container{
-        height:auto;
-        width:400px;
-        margin-right:40px;
-        margin-top: 50px;
-        float:right;
-    }
-
-
-
-
-    .right_id{
-        display: inline;
-        margin-left: 5%;
-    }
-
-    .right_item_name{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_yen{
-        display: inline;
-        padding-left: 20%;
-    }
-
-    .right_number{
-        display: inline;
-        padding-left: 10%;
-    }
-
-    .right_total_yen{
-        display: inline;
-        padding-left: 5%;
-    }
-
-    .right_containts{
-        height:250px;
-        width:400px;
-        border:1px solid black;
-        overflow: scroll;
-        text-align: center;
-    }
-
-    .option{
-        margin-top: 20px;
-    }
-
-    .reset{
-        display: inline;
-    }
-
-    .check_reset{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .pay_down{
-        display: inline;
-        padding-left: 20px;
-    }
-
-    .ticket{
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
-    .ticket_sentaku{
-        display: inline;
-    }
-
-
-    .ticket_touroku{
-        display: inline;
-        padding-left: 10px;
-    }
-
-    .total, .take_pay{
-        margin-top: 20px;
-        font-size: 150%;
-        width:600px;
-    }
-
-    .total_item{
-        display: inline;
-    }
-
-    
-
-    .take_pay2{
-        display: inline;
-    }
-
-    .take_pay3{
-        display: inline;
-        padding-left: 5%;
-    }
 ｝

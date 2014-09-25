@@ -4,24 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width ">
 	<title>会計</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 
 
 <body>
-    <header class = "header">
-            <p class = "mypage"><input type = "button" value = "マイページ" onClick = "window.open('***')"></p>
-            <p class = "shop_name">ID(名前？)</p>
-            <p class = "logout">
-                <input type = "button" value = "ログアウト" onclick ="***">
-            </p>
-
-            <p class = "touroku">
-                <input type = "button" value = "登録" onclick ="***">
-            </p>
-            <p class = "kaikei">
-                <input type = "button" value = "会計" onclick ="***">
-            </p>
+    <header>
+        <ul>
+            <div class="toggle t_left"><input type = "button" value = "ID(名前？) ▼" class="btn" onClick = "#"></li></div>
+            <div class = "head_left">
+            <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "window.open('***')"></li>
+            <li class = "shop_name">ID(名前？)</li>
+            <li class = "logout">
+                <input type = "button" value = "ログアウト" class="btn" onclick ="***">
+            </li>
+            </div>
+            
+            <div class="toggle t_right"><input type = "button" value = "メニュー▼" class="btn" onClick = "#"></li></div>
+            <div class = "head_right"> 
+            <li class = "touroku">
+                <input type = "button" value = "登録" class="btn" onclick ="***">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "会計" class="btn" onclick ="***">
+            </li>
+            </div>
+        </ul>
     </header>
     <div class="all_container">
         <div class = "left_container">
@@ -38,7 +47,7 @@
             <p class="left_item_name">商品名</p>
             <p class="left_yen">単価</p>
 
-            <div class = "left_containts">
+            <div class = "left_contents">
                 <p class = "item">
                     <input type="button" value = "***" onclick ="***">
                 </p>
@@ -51,36 +60,36 @@
         </div><!-- left_container -->
 
         <div class = "right_container">
-           <p class="right_id">ID</p>
-           <p class="right_item_name">商品名</p>
-           <p class="right_yen">単価</p>
-           <p class="right_number">個数</p>
-           <p class="right_total_yen">価格</p>
-            <div class="right_containts">
+            <ul>
+                <li class="right_id">ID</li>
+                <li class="right_item_name">商品名</li>
+                <li class="right_yen">単価</li>
+                <li class="right_number">個数</li>
+                <li class="right_total_yen">価格</li>
+            </ul>
+            <div class="right_contents">
                 a
             </div>
             <div class = "option">
-                <p class = "reset">
-                    <input type = "button" value = "リセット" onclick ="***">
-                </p>
-                <p class = "check_reset">
-                    <input type = "button" value = "チェックを解除" onclick ="***">
-                </p>
-                <p class = "pay_down">
-                    <input type = "button" value = "値切り" onclick ="***">
-                </p>
+                <ul>
+                <li class = "reset">
+                    <input type = "button" value = "リセット" class="btn" onclick ="***">
+                </li>
+                <li class = "check_reset">
+                    <input type = "button" value = "チェックを解除" class="btn" onclick ="***">
+                </li>
+                <li class = "pay_down">
+                    <input type = "button" value = "値切り" class="btn" onclick ="***">
+                </li>
+                </ul>
             </div><!-- option -->
             <div class = "ticket">
-                <form action="***" class="ticket_sentaku">
-                    <p class = "ticket_sentaku">
-                        <select name="ticket">
+                <form action="***">
+                        <select name="ticket" class="ticket_sentaku">
                             <option value="***">金券を選択</option>
                             <option value="test">test</option>
                         </select>
-                    </p>
-                </form>
-                <form action="***" method="post" class = "ticket_touroku">
-                        <input type = "button" value = "登録" onclick ="***">
+                        <input type = "button" value = "使用" class="ticket_use" onclick ="***">
                 </form>
             </div>
             <div class="total">
@@ -92,11 +101,9 @@
                 </p>
             </div>
             <div class = "take_pay">
-                <p class = "take_pay2">
-                    お預かり
-                </p>
-                <form action="***" method="post" class="take_pay3">
-                    <input type="text" name="take_pay">
+                <form action="***" method="post">
+                    <p>お預かり</p>
+                    <input type="text" name="take_pay" class="pay_text">
                 </form>
             </div>
         </div>
