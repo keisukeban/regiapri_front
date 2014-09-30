@@ -5,32 +5,68 @@
 	<meta name="viewport" content="width=device-width ">
 	<title>登録画面</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+    <script language="javascript">
+
+        function navi(obj) {
+         url = obj.options[obj.selectedIndex].value;
+         if(url != "") {
+           location.href = url;
+          }
+        }
+
+    </script>
+    
     
 </head>
 <body>
-    <header class = "header">
-            <p class = "mypage">
-                <input type = "button" value = "マイページ" class = "regi" onclick="location.href='mypage.html'">
-            </p>
-            <p class = "shop_name">ID</p>
-            <p class = "logout">
-                <input type = "button" value = "ログアウト" class = "regi" onclick ="***">
-            </p>
+    <header>
+        <ul>
+            <div class="toggle t_left">
+            	<li class = "shop_name">ID</li>
+            	<input type = "button" value = ログアウト class="btn" onClick = "#"></li></div>
+            </div>
+            <div class = "head_left">
+            <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "location.href='mypage.html'"></li>
+            <li class = "shop_name">ID</li>
+            <li class = "logout">
+                <input type = "button" value = "ログアウト" class="btn" onclick ="***">
+            </li>
+            </div>
+            
+            <div class="toggle t_right">
+                <form method=post>
+            	<select id="#eazy-select" onchange="navi(this)">
+					<option>menu</option>
+					<option value="mypage.html">マイページへ</option>
+					<option value="registration.html">登録画面へ</option>
+					<option value="payment.html">会計画面へ</option>
+           		</select>
+           		</form>
+           		<script type="text/javascript">
+					(function ($) {
+					  $('.menu2').easySelectBox();
+					})(jQuery);
+				</script>
 
-            <p class = "touroku">
-                <input type = "button" value = "登録" class = "regi" onclick ="location.href='registration.html'">
-            </p>
-            <p class = "kaikei">
-                <input type = "button" value = "会計" class = "regi"  onclick ="location.href='payment.html'">
-            </p>
+            </div>
+            <div class = "head_right"> 
+            <li class = "touroku">
+                <input type = "button" value = "登録" class="btn" onclick ="location.href='registration.html'">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
+            </li>
+            </div>
+        </ul>
     </header>
     
     <div class = "touroku_container">
         <table>
-           <tr><td>商品登録</td><td class="line"><hr size = "5"></td></tr>
+           <tr><td style="font-size:140%;"><b>商品登録</b></td><td class="line"><hr size = "5"></td></tr>
         </table>
         <div class = "touroku_head">
-            <p class="item_number">商品数：
+            <div class="item_number"><b>商品数：</b>
                 <select name="item_number">
                     <option value="one">1</option>
                     <option value="two">2</option>
@@ -38,59 +74,59 @@
                     <option value="four">4</option>
                     <option value="five">5</option>
                 </select>
-            </p>
-            <p class="new_category">新規カテゴリ：</p>
-            <p class="new_category2">
-                 <form action="***" method="post" class="new_category3">
-                    <input type="text" name="new_category" class="new_category4">
-                </form>
-                 <input type = "button" value = "登録" class = "category_touroku"  onclick ="***">
-            </p>
+            </div>
+            <div class="new_category"><b>新規カテゴリ：</b>
+                <input type="text" name="new_category" class="new_category4">
+                <input type = "button" value = "登録"  onclick ="***">
+            </div>
            
         </div>
-        <table class="touroku_table">
-           <tr>
-               <td></td>
-               <td>商品名</td>
-               <td>販売価格</td>
-               <td>カテゴリ</td>
-               <td colspan="2">在庫（0を入力で無限）
-               </td>
-            </tr>
-           <tr>
-               <td>1:</td>
-               <td><input type="text" name="item_name1"></td>
-               <td>￥<input type="text" name="price1"></td>
-               <td><select name = "category"><option value="test">test</option><option value="test2">test2</option></select></td>
-               <td><input type="text" name="stock"></td>
-               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
-            </tr>
-            <tr>
-               <td>2:</td>
-               <td><input type="text" name="item_name2"></td>
-               <td>￥<input type="text" name="price2"></td>
-               <td><select name = "category"><option value="test">test</option><option value="test3">test3</option></select></td>
-               <td><input type="text" name="stock"></td>
-               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
-            </tr>
-        </table> 
+        <div class="touroku_body">
+        	<div class="touroku_1">
+        		<div class="touroku_1_1"><b>商品名</b></div>
+        		<div class="touroku_1_2"><b>販売価格</b></div>
+        		<div class="touroku_1_3"><b>カテゴリ</b></b></div>
+        		<div class="touroku_1_4"><b>在庫(0を入力で無限)</b></div>
+        	</div>
+        	<div class="touroku_item">
+        		<div class="touroku_item_1">1:<input type="text" name="item_name1"></div>
+        		<div class="touroku_item_2">￥<input type="text" name="item_yen1"></div>
+        		<div class="touroku_item_3"><select name = "category"><option value="test">test</option><option value="test2">test2</option></select>
+        		</div>
+        		<div class="touroku_item_4"><input type="text" name="item_zaiko1"></div>
+        		<div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
+        		
+        	</div>
+        	<div class="touroku_item">
+        		<div class="touroku_item_1">2:<input type="text" name="item_name1"></div>
+        		<div class="touroku_item_2">￥<input type="text" name="item_yen1"></div>
+        		<div class="touroku_item_3"><select name = "category"><option value="test">test</option><option value="test2">test2</option></select>
+        		</div>
+        		<div class="touroku_item_4"><input type="text" name="item_zaiko1"></div>
+        		<div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
+        		
+        	</div>
+        	
+        	
+        </div>
+         
         <div class = "which">
-            <p class="cancel">
-                <input type="button" value="キャンセル" class = "regi" onclick="***">
-            </p>
-            <p class="ok">
-               <input type="button" value="確定" class = "regi" onclick="***">
+            <div class="cancel">
+                <input type="button" value="キャンセル" class = "btn" onclick="***">
+            </div>
+            <div class="ok">
+               <input type="button" value="確定" class = "btn" onclick="***">
                 
-            </p>
+            </div>
         </div>
     </div>
     <div class="touroku_container">
         <table>
-           <tr><td>金券登録</td><td class="line"><hr size = "5"></td></tr>
+           <tr><td style="font-size:140%;"><b>金券登録</b></td><td class="line"><hr size = "5"></td></tr>
         </table>
+        
         <div class = "touroku_head">
-            <p class="item_number">金券枚数：</p>
-            <p class="item_number2">
+            <div class="item_number"><b>金券枚数：</b>
                 <select name="item_number">
                     <option value="one">1</option>
                     <option value="two">2</option>
@@ -98,52 +134,51 @@
                     <option value="four">4</option>
                     <option value="five">5</option>
                 </select>
-            </p>
+            </div>
         </div>
-        <table class="touroku_table">
-            <tr>
-               <td></td>
-               <td>金券名</td>
-               <td>金券の値段</td>
-            </tr>
-            <tr>
-               <td>1:</td>
-               <td><input type="text" name="item_name1"></td>
-               <td>￥<input type="text" name="price1"></td>
-               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
-            </tr>
-            <tr>
-               <td>2:</td>
-               <td><input type="text" name="item_name2"></td>
-               <td>￥<input type="text" name="price2"></td>
-               <td><input type="button" value="消去" class = "regi" onclick="***"></td>
-            </tr>
-        </table>
+        <div class="touroku_1">
+        		<div class="touroku_2_1"><b>金券名</b></div>
+        		<div class="touroku_2_2"><b>金券の値段</b></div>
+        </div>
+        	<div class="touroku_item">
+        		<div class="touroku_item_1">1:<input type="text" name="item_name1"></div>
+        		<div class="touroku_item_2">￥<input type="text" name="item_yen1"></div>
+        		<div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
+        		
+        	</div>
+        	<div class="touroku_item">
+        		<div class="touroku_item_1">2:<input type="text" name="item_name1"></div>
+        		<div class="touroku_item_2">￥<input type="text" name="item_yen1"></div>
+        		<div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
+        		
+        	</div>
+        	
+        	
+        </div>
+        
         <div class = "which">
-            <p class="cancel">
-                <input type="button" value="キャンセル" class = "regi" onclick="***">
-            </p>
-            <p class="ok">
-               <input type="button" value="確定" class = "regi" onclick="***">
+            <div class="cancel">
+                <input type="button" value="キャンセル" class = "btn" onclick="***">
+            </div>
+            <div class="ok">
+               <input type="button" value="確定" class = "btn" onclick="***">
                 
-            </p>
+            </div>
         </div>
     </div>
     <div class="touroku_container">
         <table>
-           <tr><td>出費登録</td><td class="line"><hr size = "5"></td></tr>
+           <tr><td style="font-size:140%;"><b>費用登録</b></td><td class="line"><hr size = "5"></td></tr>
         </table>
-        <table class="shuppi_table">
-            <tr>
-               <td>金券名</td>
-               <td>金券の値段</td>
-            </tr>
-            <tr>
-               <td><input type="text" name="item_name1"></td>
-               <td>￥<input type="text" name="price1"></td>
-               <td><input type="button" value="登録" class = "regi" onclick="***"></td>
-            </tr>
-        </table>
+        <div class="touroku_1">
+        		<div class="touroku_3_1"><b>費用名</b></div>
+        		<div class="touroku_3_2"><b>費用の値段</b></div>
+        </div>
+        	<div class="touroku_item">
+        		<div class="touroku_item_1"><input type="text" name="item_name1"></div>
+        		<div class="touroku_item_2">￥<input type="text" name="item_yen1"></div>
+        		<div class="touroku_item_5"><input type="button" value="登録" class = "btn" onclick="***"></div>
+        	</div>
     </div>
     
 </body>

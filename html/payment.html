@@ -5,25 +5,61 @@
 	<meta name="viewport" content="width=device-width ">
 	<title>会計</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+    <script language="javascript">
+
+        function navi(obj) {
+         url = obj.options[obj.selectedIndex].value;
+         if(url != "") {
+           location.href = url;
+          }
+        }
+
+    </script>
+    
 </head>
 
 
 <body>
-    <header class = "header">
-            <p class = "mypage">
-                <input type = "button" value = "マイページ" class = "regi" onclick="location.href='mypage.html'">
-            </p>
-            <p class = "shop_name">ID</p>
-            <p class = "logout">
-                <input type = "button" value = "ログアウト" class = "regi" onclick ="***">
-            </p>
+    <header>
+        <ul>
+            <div class="toggle t_left">
+            	<li class = "shop_name">ID</li>
+            	<input type = "button" value = ログアウト class="btn" onClick = "#"></li></div>
+            </div>
+            <div class = "head_left">
+            <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "location.href='mypage.html'"></li>
+            <li class = "shop_name">ID</li>
+            <li class = "logout">
+                <input type = "button" value = "ログアウト" class="btn" onclick ="***">
+            </li>
+            </div>
+            
+            <div class="toggle t_right">
+                <form method=post>
+            	<select id="#eazy-select" onchange="navi(this)">
+					<option>menu</option>
+					<option value="mypage.html">マイページへ</option>
+					<option value="registration.html">登録画面へ</option>
+					<option value="payment.html">会計画面へ</option>
+           		</select>
+           		</form>
+           		<script type="text/javascript">
+					(function ($) {
+					  $('.menu2').easySelectBox();
+					})(jQuery);
+				</script>
 
-            <p class = "touroku">
-                <input type = "button" value = "登録" class = "regi" onclick ="location.href='registration.html'">
-            </p>
-            <p class = "kaikei">
-                <input type = "button" value = "会計" class = "regi"  onclick ="location.href='payment.html'">
-            </p>
+            </div>
+            <div class = "head_right"> 
+            <li class = "touroku">
+                <input type = "button" value = "登録" class="btn" onclick ="location.href='registration.html'">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
+            </li>
+            </div>
+        </ul>
     </header>
     <div class="all_container">
         <div class = "left_container">
@@ -40,9 +76,9 @@
             <p class="left_item_name">商品名</p>
             <p class="left_yen">単価</p>
 
-            <div class = "left_containts">
+            <div class = "left_contents">
                 <p class = "item">
-                    <input type="button" value = "***" class = "button_item" onclick ="***">
+                    <input type="button" value = "***" onclick ="***">
                 </p>
             </div>
             <ul class = "sell">
@@ -53,74 +89,67 @@
         </div><!-- left_container -->
 
         <div class = "right_container">
-           <p class="right_id">ID</p>
-           <p class="right_item_name">商品名</p>
-           <p class="right_yen">単価</p>
-           <p class="right_number">個数</p>
-           <p class="right_total_yen">価格</p>
-            <div class="right_containts">
+            <ul>
+                <li class="right_id">ID</li>
+                <li class="right_item_name">商品名</li>
+                <li class="right_yen">単価</li>
+                <li class="right_number">個数</li>
+                <li class="right_total_yen">価格</li>
+            </ul>
+            <div class="right_contents">
                 a
             </div>
             <div class = "option">
-                <p class = "reset">
-                    <input type = "button" value = "リセット" class = "regi" onclick ="***">
-                </p>
-                <p class = "check_reset">
-                    <input type = "button" value = "チェックを解除" class = "regi" onclick ="***">
-                </p>
-                <p class = "pay_down">
-                    <input type = "button" value = "値切り" class = "regi" onclick ="***">
-                </p>
+                <ul>
+                <li class = "reset">
+                    <input type = "button" value = "リセット" class="btn" onclick ="***">
+                </li>
+                <li class = "check_reset">
+                    <input type = "button" value = "チェックを解除" class="btn" onclick ="***">
+                </li>
+                <li class = "pay_down">
+                    <input type = "button" value = "値切り" class="btn" onclick ="***">
+                </li>
+                </ul>
             </div><!-- option -->
             <div class = "ticket">
-                <form action="***" class="ticket_sentaku">
-                    <p class = "ticket_sentaku">
-                        <select name="ticket">
+                <form action="***">
+                        <select name="ticket" class="ticket_sentaku">
                             <option value="***">金券を選択</option>
                             <option value="test">test</option>
                         </select>
-                    </p>
-                </form>
-                <form action="***" method="post" class = "ticket_touroku">
-                        <input type = "button" value = "登録" class = "regi" onclick ="***">
+                        <input type = "button" value = "使用" class="ticket_use" onclick ="***">
                 </form>
             </div>
-            <div class="total">
-                <p class = "total_item">
-                    計***点
-                </p>
-                <p class = "total_yen">
-                    ￥******
-                </p>
-            </div>
-            <div class = "take_pay">
-                <p class = "take_pay2">
-                    お預かり
-                </p>
-                <form action="***" method="post" class="take_pay3">
-                    <input type="text" name="take_pay">
-                </form>
-            </div>
-            <div class = "exchange">
-                <p class = "exchange2">
-                    お釣り
-                </p>
-                <form action="***" method="get" class="exchange3">
-                    <input type="text" name="exchange">
-                </form>
-            </div>
+				<div class="total">
+					<p class = "total_item">
+						計***点
+					</p>
+					<p class = "total_yen">
+						￥******
+					</p>
+				</div>
+				<div class = "take_pay">
+						<p>お預かり</p>
+						<input type="text" name="take_pay" class="pay_text">
+				</div>
+				 <div class = "exchange">
+					<p>お釣り</p>
+					<input type="text" name="exchange" class="exchange_text">
+				</div>
             <div class = "decide">
-                <p class = "decide2">
-                   <b>確定</b>
-                </p>
-                <p class = "decide_men">
-                    <input type = "button" value = "幼" class ="men" onclick ="***"><input type = "button" value = "成" class ="men" onclick ="***"><input type = "button" value = "老" class ="men" onclick ="***">
-                </p>
-                <p class = "decide_women">
-                    <input type = "button" value = "幼" class ="women" onclick ="***"><input type = "button" value = "成" class ="women" onclick ="***"><input type = "button" value = "老" class ="women" onclick ="***">
-                </p>
+                <div class = "decide2">
+                   <p>清算確定</p>
+                </div>
+                <div class="decide_case">
+					<div class = "decide_men">
+						<input type = "button" value = "幼" class ="men" onclick ="***"><input type = "button" value = "成" class ="men" onclick ="***"><input type = "button" value = "老" class ="men" onclick ="***">
+					</div>
+					<div class = "decide_women">
+						<input type = "button" value = "幼" class ="women" onclick ="***"><input type = "button" value = "成" class ="women" onclick ="***"><input type = "button" value = "老" class ="women" onclick ="***">
+					</div>
+           		</div>
             </div>
-        </div>
     </div>
 </body>
 </html>

@@ -5,28 +5,25 @@
 	<meta name="viewport" content="width=device-width ">
 	<title>ログイン画面</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
     
 </head>
 <body>
-    <header class = "header" style="text-align:centar; color:white;" >
+    <header style="text-align:centar; color:white;" >
         ログイン
     </header>
     <div class="login_container">
-        <p>ユーザーID</p>
-        <p>
-            <form action="***" method="post" class="take_id">
-                <input type="text" name="take_id">
-            </form>
-        </p>
-        <p>パスワード</p>
-        <p>
-            <form action="***" method="post" class="take_pass">
-                <input type="text" name="take_pass">
-            </form>
-        </p>
-        <p>
+        <div class="user">ユーザーID</div>
+        <div>
+            <input type="text" name="take_id">
+        </div>
+        <div class="pass">パスワード</div>
+        <div>
+            <input type="text" name="take_pass">
+        </div>
+        <div>
             <input type="button" value = "ログイン" class = "regi" onclick ="***">
-        </p>
+        </div>
     </div>
 </body>
 </html>
