@@ -29,7 +29,7 @@
             </div>
             <div class = "head_left">
             <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "location.href='mypage.html'"></li>
-            <li class = "shop_name">ID</li>
+            <li class = "shop_name">ＩＤ名</li>
             <li class = "logout">
                 <input type = "button" value = "ログアウト" class="btn" onclick ="***">
             </li>
@@ -40,8 +40,9 @@
             	<select id="#eazy-select" onchange="navi(this)">
 					<option>menu</option>
 					<option value="mypage.html">マイページへ</option>
-					<option value="registration.html">登録画面へ</option>
+					<option value="registration.html">各種登録・削除画面へ</option>
 					<option value="payment.html">会計画面へ</option>
+          			<option value="sales.html">売上詳細画面へ</option>
            		</select>
            		</form>
            		<script type="text/javascript">
@@ -53,10 +54,13 @@
             </div>
             <div class = "head_right"> 
             <li class = "touroku">
-                <input type = "button" value = "登録" class="btn" onclick ="location.href='registration.html'">
+                <input type = "button" value = "各種登録・削除" class="btn" onclick ="location.href='registration.html'">
             </li>
             <li class = "kaikei">
                 <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "売上詳細" class="btn" onclick ="location.href='sales.html'">
             </li>
             </div>
         </ul>
@@ -72,7 +76,6 @@
                 </p>
             </div><!-- category -->
 
-            <p class="left_id">ID</p>
             <p class="left_item_name">商品名</p>
             <p class="left_yen">単価</p>
 
@@ -90,7 +93,6 @@
 
         <div class = "right_container">
             <ul>
-                <li class="right_id">ID</li>
                 <li class="right_item_name">商品名</li>
                 <li class="right_yen">単価</li>
                 <li class="right_number">個数</li>
@@ -113,13 +115,11 @@
                 </ul>
             </div><!-- option -->
             <div class = "ticket">
-                <form action="***">
                         <select name="ticket" class="ticket_sentaku">
                             <option value="***">金券を選択</option>
                             <option value="test">test</option>
                         </select>
                         <input type = "button" value = "使用" class="ticket_use" onclick ="***">
-                </form>
             </div>
 				<div class="total">
 					<p class = "total_item">

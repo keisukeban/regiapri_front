@@ -48,8 +48,9 @@
             	<select id="#eazy-select" onchange="navi(this)">
 					<option>menu</option>
 					<option value="mypage.html">マイページへ</option>
-					<option value="registration.html">登録画面へ</option>
+					<option value="registration.html">各種登録・削除画面へ</option>
 					<option value="payment.html">会計画面へ</option>
+          			<option value="sales.html">売上詳細画面へ</option>
            		</select>
            		</form>
            		<script type="text/javascript">
@@ -61,10 +62,13 @@
             </div>
             <div class = "head_right"> 
             <li class = "touroku">
-                <input type = "button" value = "登録" class="btn" onclick ="location.href='registration.html'">
+                <input type = "button" value = "各種登録、削除" class="btn" onclick ="location.href='registration.html'">
             </li>
             <li class = "kaikei">
                 <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
+            </li>
+            <li class = "kaikei">
+                <input type = "button" value = "売上詳細" class="btn" onclick ="location.href='sales.html'">
             </li>
             </div>
         </ul>
@@ -73,10 +77,10 @@
         <div class = "link">
             <ul>
                 <li>
-                    <input type = "button" value = "売上詳細、各種削除へ" class="btn" onclick ="location.href='sales.html'">
+                    <input type = "button" value = "売上詳細へ" class="btn" onclick ="location.href='sales.html'">
                 </li>
                 <li>
-                    <input type = "button" value = "登録画面へ" class="btn" onclick ="location.href='registration.html'">
+                    <input type = "button" value = "各種登録・削除画面へ" class="btn" onclick ="location.href='registration.html'">
                 </li>
                 <li>
                     <input type = "button" value = "会計画面へ" class="btn" onclick ="location.href='payment.html'">
@@ -92,7 +96,7 @@
                 <input type="checkbox" name="function" value="ticket">金券を使用する
                 </p>
                 <p class="sonweki">
-                <input type="checkbox" name="function" value="sonweki">損益を表示する
+                <input type="checkbox" name="function" value="sonweki">赤字・黒字を表示する
                 </p>
             </div>
         </div>
