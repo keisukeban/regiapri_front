@@ -41,7 +41,7 @@
 					<option value="mypage.html">マイページへ</option>
 					<option value="registration.html">各種登録・削除画面へ</option>
 					<option value="payment.html">会計画面へ</option>
-          			<option value="sales.html">売上詳細画面へ</option>
+          			<option value="sales.html">売上画面へ</option>
            		</select>
            		</form>
            		<script type="text/javascript">
@@ -59,7 +59,7 @@
                 <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
             </li>
             <li class = "kaikei">
-                <input type = "button" value = "売上詳細" class="btn" onclick ="location.href='sales.html'">
+                <input type = "button" value = "売上" class="btn" onclick ="location.href='sales.html'">
             </li>
             </div>
         </ul>
@@ -69,33 +69,21 @@
     	<table>
            <tr><td style="font-size:140%;"><b>カテゴリ登録</b></td><td class="line5"><hr size = "5"></td></tr>
         </table>
-        <div class = "touroku_head">
-            <div class="item_number"><b>新たに登録したいカテゴリの数：</b>
-                <select name="category_number">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                </select>
-            </div>
-        </div>
         <div class="touroku_1">
-        		<div class="touroku_4_1"><b>カテゴリ名</b></div>
+        		<div class="category_name"><b>カテゴリ名</b></div>
         </div>
         	<div class="touroku_item">
-        		<div class="touroku_item_1">1:<input type="text" name="item_name1"></div>
-        		<div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
+        		<div class="touroku_item_1"><input type="text" name="item_name1"></div>
+        		<div class="touroku_item_5"><input type="button" value="登録" class = "btn" onclick="***"></div>
+        		<select name="category_name">
+                    <option value="one">日用品</option>
+                    <option value="two">***</option>
+                    <option value="three">+++</option>
+                    <option value="four">---</option>
+                    <option value="five">///</option>
+                </select>
+                <div class="touroku_item_5"><input type="button" value="消去" class = "btn" onclick="***"></div>
         	</div>
-        	<div class = "which">
-				<div class="cancel">
-					<input type="button" value="取り消し" class = "btn" onclick="***">
-				</div>
-				<div class="ok">
-				   <input type="button" value="確定" class = "btn" onclick="***">
-
-				</div>
-        </div>
         </div>
     <div class = "touroku_container">
         <table>

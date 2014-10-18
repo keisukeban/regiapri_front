@@ -158,6 +158,58 @@ width:93px;
 	position:relative;
 	top:1px;
 }
+.left_container div.divButtonOff {
+  padding: 10px;
+  background: #a9a9a9;
+  width: 350px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.left_container div.divButtonOff span {
+  font: 15px;
+}
+.left_container div.divButtonOff span.id {
+  margin-left: -5px;
+}
+.left_container div.divButtonOff span.name {
+  margin-left: 20px;
+}
+.left_container div.divButtonOff span.price {
+  margin-left: 100px;
+}
+.left_container div.divButtonOff span.number {
+  margin-left: 30px;
+}
+.left_container div.divButtonOff span.money {
+  margin-left: 15px;
+}
+.right_container div.divButtonOn {
+  padding: 10px;
+  background: lightskyblue;
+  width: 450px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.right_container div.divButtonOn span {
+  font: 15px;
+}
+.right_container div.divButtonOn span.id {
+  margin-left: -5px;
+}
+.right_container div.divButtonOn span.name {
+  margin-left: 20px;
+}
+.right_container div.divButtonOn span.price {
+  margin-left: 100px;
+}
+.right_container div.divButtonOn span.number {
+  margin-left: 30px;
+}
+.right_container div.divButtonOn span.money {
+  margin-left: 15px;
+}
+
+
 
 
 /*
@@ -212,11 +264,14 @@ width:93px;
     }
 
     .sell{
-        border: solid 2px #333;
         width: 400px;
         height: 180px;
         margin: 20px 0;
+		border: 2px solid black;
     }
+	.sell li{
+		font-size: 120%;
+	}
     /*
     ここまで左側コンテンツ
     */
@@ -518,6 +573,9 @@ width:93px;
         .touroku_item{
             margin-top: 10px;
         }
+		.category_name{
+			margin-left: 240px;
+		}
 
 @charaset "utf-8";
 /*==================================
@@ -548,7 +606,9 @@ width:93px;
     ここまでヘッダーｃｓｓ
     =============================================
     */
-
+	.sell{
+		width: 100px;
+	}
     /*ここまで会計ページCSS*/
     .link ul li{
         display: block;
@@ -558,6 +618,9 @@ width:93px;
     .link ul li input{
         width: 80%;
     }
+	.left_container div .divButtonOff,.right_container div.divButtonOn{
+		width:auto;
+	}
 /*==============================================
     売上詳細
 ================================================*/
@@ -642,9 +705,14 @@ body{
 
     .sell{
         position: absolute;
-        top: 805px;
+        top: 750px;
         width: 45%;
+		border: none;
     }
+	.sell li{
+		font-size: 100%;
+	}
+	
     /*
     ここまで左側コンテンツ
     */
@@ -661,7 +729,7 @@ body{
         margin: 0 auto 20px;
     }
 
-    .ticket{
+    .ticket,.sell{
         width: 50%;
         float: left;
     }

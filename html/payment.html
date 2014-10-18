@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width ">
-	<title>会計</title>
+	<title>会計画面</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/reset.css" type="text/css" />
     <script language="javascript">
@@ -24,12 +24,12 @@
     <header>
         <ul>
             <div class="toggle t_left">
-            	<li class = "shop_name">ID</li>
+            	<li class = "shop_name">bandoukkk</li>
             	<input type = "button" value = ログアウト class="btn" onClick = "#"></li></div>
             </div>
             <div class = "head_left">
             <li class = "mypage"><input type = "button" value = "マイページ" class="btn" onClick = "location.href='mypage.html'"></li>
-            <li class = "shop_name">ＩＤ名</li>
+            <li class = "shop_name">bandoukkk</li>
             <li class = "logout">
                 <input type = "button" value = "ログアウト" class="btn" onclick ="***">
             </li>
@@ -42,7 +42,7 @@
 					<option value="mypage.html">マイページへ</option>
 					<option value="registration.html">各種登録・削除画面へ</option>
 					<option value="payment.html">会計画面へ</option>
-          			<option value="sales.html">売上詳細画面へ</option>
+          			<option value="sales.html">売上画面へ</option>
            		</select>
            		</form>
            		<script type="text/javascript">
@@ -60,7 +60,7 @@
                 <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
             </li>
             <li class = "kaikei">
-                <input type = "button" value = "売上詳細" class="btn" onclick ="location.href='sales.html'">
+                <input type = "button" value = "売上" class="btn" onclick ="location.href='sales.html'">
             </li>
             </div>
         </ul>
@@ -75,14 +75,18 @@
                 </select>
                 </p>
             </div><!-- category -->
-
-            <p class="left_item_name">商品名</p>
-            <p class="left_yen">単価</p>
-
             <div class = "left_contents">
-                <p class = "item">
-                    <input type="button" value = "***" onclick ="***">
-                </p>
+               <div class="divButtonOff">
+					<span class="name">商品名</span>
+					<span class="price">単価</span></span>
+					
+			   </div>
+           	   <div class="divButtonOff">
+					<span class="name">商品名</span>
+					<span class="price">単価</span></span>
+			   </div>
+            
+
             </div>
             <ul class = "sell">
                 <li class = "today_sell">本日の売り上げ：</li>
@@ -92,14 +96,13 @@
         </div><!-- left_container -->
 
         <div class = "right_container">
-            <ul>
-                <li class="right_item_name">商品名</li>
-                <li class="right_yen">単価</li>
-                <li class="right_number">個数</li>
-                <li class="right_total_yen">価格</li>
-            </ul>
             <div class="right_contents">
-                a
+                <div class="divButtonOn">
+					<span class="name">商品名</span>
+					<span class="price">単価</span></span>
+					<span class="number">個数</span>
+					<span class="money">価格</span>
+			   </div>
             </div>
             <div class = "option">
                 <ul>
@@ -143,13 +146,16 @@
                 </div>
                 <div class="decide_case">
 					<div class = "decide_men">
-						<input type = "button" value = "幼" class ="men" onclick ="***"><input type = "button" value = "成" class ="men" onclick ="***"><input type = "button" value = "老" class ="men" onclick ="***">
+						<input type = "button" value = "~10歳" class ="men" onclick ="***"><input type = "button" value = "10~30歳" class ="men" onclick ="***"><input type = "button" value = "30歳以上" class ="men" onclick ="***">
 					</div>
 					<div class = "decide_women">
-						<input type = "button" value = "幼" class ="women" onclick ="***"><input type = "button" value = "成" class ="women" onclick ="***"><input type = "button" value = "老" class ="women" onclick ="***">
+						<input type = "button" value = "~10歳" class ="women" onclick ="***"><input type = "button" value = "10~30歳" class ="women" onclick ="***"><input type = "button" value = "30歳以上" class ="women" onclick ="***">
 					</div>
            		</div>
+           		<p style="font-size:50%;">※性別、推定される客の年齢を押してください。</p>
+           		<p style="font-size:50%;">※上記のいずれかのボタンを押した時点で1回の会計が終了します</p>
             </div>
+    	</div>
     </div>
 </body>
 </html>
