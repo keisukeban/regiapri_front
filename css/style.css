@@ -161,9 +161,9 @@ width:93px;
 .left_container div.divButtonOff {
   padding: 10px;
   background: #a9a9a9;
-  width: 350px;
-  margin-top: 5px;
-  margin-left: 5px;
+  width: 330px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 .left_container div.divButtonOff span {
   font: 15px;
@@ -183,29 +183,29 @@ width:93px;
 .left_container div.divButtonOff span.money {
   margin-left: 15px;
 }
-.right_container div.divButtonOn {
+.left_container div.divButtonOn {
   padding: 10px;
   background: lightskyblue;
-  width: 450px;
-  margin-left: 5px;
-  margin-top: 5px;
+  width: 330px;
+  margin-left: 15px;
+  margin-top: 20px;
 }
-.right_container div.divButtonOn span {
+.left_container div.divButtonOn span {
   font: 15px;
 }
-.right_container div.divButtonOn span.id {
+.left_container div.divButtonOn span.id {
   margin-left: -5px;
 }
-.right_container div.divButtonOn span.name {
+.left_container div.divButtonOn span.name {
   margin-left: 20px;
 }
-.right_container div.divButtonOn span.price {
+.left_container div.divButtonOn span.price {
   margin-left: 100px;
 }
-.right_container div.divButtonOn span.number {
+.left_container div.divButtonOn span.number {
   margin-left: 30px;
 }
-.right_container div.divButtonOn span.money {
+.left_container div.divButtonOn span.money {
   margin-left: 15px;
 }
 
@@ -277,7 +277,7 @@ width:93px;
     */
 
 
- .right_container{
+    .right_container{
         height:auto;
         width:500px;
         margin-top: 37px;
@@ -315,9 +315,9 @@ width:93px;
         float: right;
         border:1px solid black;
         overflow: scroll;
-        text-align: center;
         margin-bottom: 20px;
         background: #fff;
+		white-space:nowrap;
     }
 
     .option ul{
@@ -345,6 +345,25 @@ width:93px;
         width:500px;
         margin-top: 10px;
     }
+	.pay_item, .pay_ticket{
+		margin-top: 25px;
+		margin-left: 15px;
+	}
+	.pay_ticket p{
+		color: lightskyblue; 
+	}
+	.pay_item p,.pay_ticket p{
+		margin-left: 10px;
+		display: inline-block;
+	}
+	.pay_yen, .pay_ticket{
+		width: 50px;
+		height: 15px;
+	}
+	.item_kazu, .ticket_kazu{
+		width: 15px;
+		height: 15px;
+	}
 
     .total_item{
         float: left;
@@ -368,11 +387,18 @@ width:93px;
     }
     .decide{
         clear: both;
+		width: 500px;
+		margin: 0 auto;
+		
     }
-    .decide_women{
+    .decide_women, .dicide_men{
         margin-top: 5px;
     }
-    
+    /*.decide span{
+		margin-left: 85px;
+		padding: 6px 10px;
+		background-color: lightblue;
+	}*/
 
 /*=============================================
     マイページ
@@ -618,8 +644,8 @@ width:93px;
     .link ul li input{
         width: 80%;
     }
-	.left_container div .divButtonOff,.right_container div.divButtonOn{
-		width:auto;
+	.left_container div .divButtonOff,.left_container div.divButtonOn{
+		width:93%;
 	}
 /*==============================================
     売上詳細
@@ -646,13 +672,13 @@ width:93px;
 		width: 670px;
 	}
 	.line5{
-		width: 600px;
+		width: 620px;
 	}
 
 }
 /*
 =====================================
-小さ目タブレット横向けのスタイル
+タブレット横向けのスタイル
 =====================================
 */
 @media only screen and (max-width:1010px){

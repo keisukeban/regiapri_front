@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width ">
+	<meta name="viewport" content="width=device-width">
 	<title>会計画面</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/reset.css" type="text/css" />
@@ -45,16 +45,12 @@
           			<option value="sales.html">売上画面へ</option>
            		</select>
            		</form>
-           		<script type="text/javascript">
-					(function ($) {
-					  $('.menu2').easySelectBox();
-					})(jQuery);
-				</script>
+           		
 
             </div>
             <div class = "head_right"> 
             <li class = "touroku">
-                <input type = "button" value = "各種登録・削除" class="btn" onclick ="location.href='registration.html'">
+                <input type = "button" value = "登録" class="btn" onclick ="location.href='registration.html'">
             </li>
             <li class = "kaikei">
                 <input type = "button" value = "会計" class="btn" onclick ="location.href='payment.html'">
@@ -81,6 +77,10 @@
 					<span class="price">単価</span></span>
 					
 			   </div>
+          	   <div class="divButtonOn">
+					<span class="name">商品名</span>
+					<span class="price">単価</span>
+			   </div>
            	   <div class="divButtonOff">
 					<span class="name">商品名</span>
 					<span class="price">単価</span></span>
@@ -97,12 +97,27 @@
 
         <div class = "right_container">
             <div class="right_contents">
-                <div class="divButtonOn">
-					<span class="name">商品名</span>
-					<span class="price">単価</span></span>
-					<span class="number">個数</span>
-					<span class="money">価格</span>
-			   </div>
+                <div class="pay_item">
+                	<p class="pay_item0"><input type="checkbox" name="check"></p>
+                	<p class="pay_item1">this is a test item longlonglonglonglonglonglongname</p>
+                	<p class="pay_item2">￥99999</p>
+                	<p class="pay_item3"><input type="button" value="▽" onclick="***"><input type="text" name="item" class="item_kazu" value="1"><input type="button" value="△" onclick="***"></p>
+                	<p class="pay_item4">￥<input type="text" name="pay_yen" class="pay_yen" value="99999"></p>
+                </div>
+                <div class="pay_item">
+                	<p class="pay_item0"><input type="checkbox" name="check"></p>
+                	<p class="pay_item1">商品名Ａ</p>
+                	<p class="pay_item2">￥99999</p>
+                	<p class="pay_item3"><input type="button" value="▽" onclick="***"><input type="text" name="item" class="item_kazu" value="1"><input type="button" value="△" onclick="***"></p>
+                	<p class="pay_item4">￥<input type="text" name="pay_yen" class="pay_yen" value="99999"></p>
+                </div>
+                <div class="pay_ticket">
+                	<p class="pay_ticket0"><input type="checkbox" name="check"></p>
+                	<p class="pay_ticket1">金券名</p></p>
+                	<p class="pay_ticket2">￥-99999</p>
+                	<p class="pay_ticket3"><input type="button" value="▽" onclick="***"><input type="text" name="ticket" class="ticket_kazu" value="1"><input type="button" value="△" onclick="***"></p>
+                	<p class="pay_ticket4">￥-99999</p>
+                </div>
             </div>
             <div class = "option">
                 <ul>
@@ -141,15 +156,13 @@
 					<input type="text" name="exchange" class="exchange_text">
 				</div>
             <div class = "decide">
-                <div class = "decide2">
-                   <p>清算確定</p>
-                </div>
+                <span>清算確定</span>
                 <div class="decide_case">
 					<div class = "decide_men">
-						<input type = "button" value = "~10歳" class ="men" onclick ="***"><input type = "button" value = "10~30歳" class ="men" onclick ="***"><input type = "button" value = "30歳以上" class ="men" onclick ="***">
+						<input type = "button" value = "~10代" class ="men" onclick ="***"><input type = "button" value = "20~30代" class ="men" onclick ="***"><input type = "button" value = "40代~" class ="men" onclick ="***">
 					</div>
 					<div class = "decide_women">
-						<input type = "button" value = "~10歳" class ="women" onclick ="***"><input type = "button" value = "10~30歳" class ="women" onclick ="***"><input type = "button" value = "30歳以上" class ="women" onclick ="***">
+						<input type = "button" value = "~10代" class ="women" onclick ="***"><input type = "button" value = "20~30代" class ="women" onclick ="***"><input type = "button" value = "40代~" class ="women" onclick ="***">
 					</div>
            		</div>
            		<p style="font-size:50%;">※性別、推定される客の年齢を押してください。</p>
@@ -157,5 +170,6 @@
             </div>
     	</div>
     </div>
+    
 </body>
 </html>
