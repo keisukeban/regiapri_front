@@ -310,7 +310,7 @@ width:93px;
     }
 
     .right_contents{
-        height:250px;
+        height:200px;
         width:500px;
         float: right;
         border:1px solid black;
@@ -349,10 +349,10 @@ width:93px;
 		margin-top: 25px;
 		margin-left: 15px;
 	}
-	.pay_ticket p{
+	.pay_ticket div{
 		color: lightskyblue; 
 	}
-	.pay_item p,.pay_ticket p{
+	.pay_item div,.pay_ticket div{
 		margin-left: 10px;
 		display: inline-block;
 	}
@@ -389,8 +389,17 @@ width:93px;
         clear: both;
 		width: 500px;
 		margin: 0 auto;
-		
+		padding-top: 10px;
     }
+	.decide_case{
+		border: solid 2px;
+		padding: 5px 5px;
+	}
+	.indecide{
+		width:269px;
+		margin: 0 auto;
+		margin-top: 5px;
+	}
     .decide_women, .dicide_men{
         margin-top: 5px;
     }
@@ -794,8 +803,12 @@ body{
         float: right;
     }
     .decide{
-        float: right;
+        width: 100%;
     }
+	.indecide{
+		margin:0 auto;
+	}
+	
 
     
     /*ここまで会計ページCSS*/
