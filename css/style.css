@@ -231,7 +231,6 @@ width:93px;
 
     .left_category{
         margin: 10px 0 5px 0;
-
     }
 
     .left_id{
@@ -243,7 +242,12 @@ width:93px;
         display: inline;
         margin-left: 5%;
     }
-
+	.name{
+		width: 30ex;
+	}
+	.price{
+		width: 15ex;
+	}
     .left_yen{
         display: inline;
         margin-left: 30%;
@@ -272,9 +276,7 @@ width:93px;
 	.sell li{
 		font-size: 120%;
 	}
-    /*
-    ここまで左側コンテンツ
-    */
+    /*ここまで左側コンテンツ*/
 
 
     .right_container{
@@ -319,10 +321,9 @@ width:93px;
         background: #fff;
 		white-space:nowrap;
     }
-
     .option ul{
         padding-top: 20px;
-        width: 500px;
+        width: 450px;
         margin: 0 auto;
     }
     .option ul li{
@@ -355,6 +356,12 @@ width:93px;
 	.pay_item div,.pay_ticket div{
 		margin-left: 10px;
 		display: inline-block;
+	}
+	.pay_item1,.pay_ticket1{
+		width: 30ex;
+	}
+	.pay_item2,.pay_ticket2{
+		width: 8ex;
 	}
 	.pay_yen, .pay_ticket{
 		width: 50px;
@@ -396,7 +403,7 @@ width:93px;
 		padding: 5px 5px;
 	}
 	.indecide{
-		width:269px;
+		width:270px;
 		margin: 0 auto;
 		margin-top: 5px;
 	}
