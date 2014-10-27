@@ -392,6 +392,9 @@ width:93px;
         font-size: 100%;
         float: right;
     }
+	.exchange_text{
+		width: auto;
+	}
     .decide{
         clear: both;
 		width: 500px;
@@ -795,12 +798,18 @@ body{
         width: 50%;
     }
 
-    .take_pay, .exchange{
+    .take_pay{
         width: 50%;
         float: right;
         margin-bottom: 30px;
         clear: both;
     }
+	.exchange{
+		width: 50%;
+        float: right;
+        margin-top: -10px;
+        clear: both;
+	}
     .take_pay p, exchange p{
         width: 40%;
         float: left;
