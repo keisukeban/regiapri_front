@@ -244,9 +244,11 @@ width:93px;
     }
 	.name{
 		width: 30ex;
+		display: inline-block;
 	}
 	.price{
 		width: 15ex;
+		display: inline-block;
 	}
     .left_yen{
         display: inline;
@@ -392,6 +394,9 @@ width:93px;
         font-size: 100%;
         float: right;
     }
+	.pay_text{
+		width: 85px;
+	}
 	.exchange_text{
 		width: auto;
 	}
