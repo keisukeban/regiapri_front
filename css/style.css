@@ -160,53 +160,45 @@ width:93px;
 }
 .left_container div.divButtonOff {
   padding: 10px;
-  background: #a9a9a9;
-  width: 330px;
+  background: #919191;
+  color: #ffffff;
+  width: auto;
+  height: 35px;
   margin-top: 20px;
-  margin-left: 15px;
-}
-.left_container div.divButtonOff span {
-  font: 15px;
-}
-.left_container div.divButtonOff span.id {
-  margin-left: -5px;
-}
-.left_container div.divButtonOff span.name {
   margin-left: 20px;
+  margin-right: 20px;
 }
-.left_container div.divButtonOff span.price {
-  margin-left: 100px;
+.left_container div.divButtonOff .name {
+    width:200px;
+    margin-top: 8px;
+    float: left;
 }
-.left_container div.divButtonOff span.number {
-  margin-left: 30px;
+.left_container div.divButtonOff .price {
+    margin-top: 8px;
+    float: right;
+    margin-right: 20px;
 }
-.left_container div.divButtonOff span.money {
-  margin-left: 15px;
-}
+
 .left_container div.divButtonOn {
   padding: 10px;
-  background: lightskyblue;
-  width: 330px;
-  margin-left: 15px;
+  background: #7293ca;
+  color: #ffffff;
+  width: auto;
+  height: 35px;
   margin-top: 20px;
-}
-.left_container div.divButtonOn span {
-  font: 15px;
-}
-.left_container div.divButtonOn span.id {
-  margin-left: -5px;
-}
-.left_container div.divButtonOn span.name {
   margin-left: 20px;
+  margin-right: 20px;
 }
-.left_container div.divButtonOn span.price {
-  margin-left: 100px;
+
+.left_container div.divButtonOn .name {
+    width:200px;
+    margin-top: 8px;
+    float: left;
 }
-.left_container div.divButtonOn span.number {
-  margin-left: 30px;
-}
-.left_container div.divButtonOn span.money {
-  margin-left: 15px;
+.left_container div.divButtonOn .price {
+    margin-top: 8px;
+    float: right;
+    margin-right: 20px;
 }
 
 
